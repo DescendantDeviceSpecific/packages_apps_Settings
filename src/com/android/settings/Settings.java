@@ -166,4 +166,6 @@ public class Settings extends SettingsActivity {
     public static class AccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
 
+    // Descendant Additions.
+    public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
 }
