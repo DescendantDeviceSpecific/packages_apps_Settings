@@ -166,4 +166,11 @@
         android:summary="@string/summary_placeholder"
         settings:allowDividerAbove="true"/>
 
+    <!-- Descendant versioning -->
+    <Preference
+        android:key="descendant_version"
+        android:order="44"
+        android:title="@string/descendant_version"
+        android:summary="@string/descendant_version_default" />
+
 </PreferenceScreen>
