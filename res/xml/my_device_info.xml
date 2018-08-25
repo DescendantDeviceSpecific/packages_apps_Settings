@@ -21,6 +21,12 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
+    <PreferenceScreen
+        android:key="descendant_about"
+        android:enabled="false"
+        android:order="-1"
+        android:layout="@layout/descendant_about" />
+
     <com.android.settings.applications.LayoutPreference
         android:key="my_device_info_header"
         android:order="0"
