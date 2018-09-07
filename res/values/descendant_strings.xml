@@ -100,4 +100,8 @@
     <string name="descendant_version">Descendant version</string>
     <string name="descendant_version_default">Unknown</string>
 
+    <!-- Changelog -->
+    <string name="changelog_summary">Since the last update</string>
+    <string name="changelog_error">Unable to load changelog</string>
+
 </resources>
