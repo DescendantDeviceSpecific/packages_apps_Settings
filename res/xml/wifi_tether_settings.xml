@@ -19,7 +19,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/wifi_hotspot_checkbox_text"
-    settings:initialExpandedChildrenCount="3">
+    settings:initialExpandedChildrenCount="8">
 
     <com.android.settings.widget.ValidatedEditTextPreference
         android:key="wifi_tether_network_name"
@@ -45,5 +45,9 @@
 
     <ListPreference
         android:key="wifi_tether_network_ap_band"
-        android:title="@string/wifi_hotspot_ap_band_title" />
+        android:title="@string/wifi_hotspot_ap_band_title"
+        android:dialogLayout="@layout/hotspot_ap_band_selection_dialog"
+        android:dialogTitle="@string/wifi_hotspot_ap_band_title"
+        android:negativeButtonText="@string/cancel"
+        android:positiveButtonText="@string/apply" />
 </PreferenceScreen>
