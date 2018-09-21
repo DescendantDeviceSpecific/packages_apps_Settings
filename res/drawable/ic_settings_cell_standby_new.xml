@@ -20,6 +20,6 @@ limitations under the License.
         android:viewportHeight="24.0"
         android:tint="?android:attr/colorControlNormal">
     <path
-        android:fillColor="#FFFFFFFF"
+        android:fillColor="?android:attr/colorAccent"
         android:pathData="M1,21H21V1M19,5.83V19H13V11.83" />
 </vector>
