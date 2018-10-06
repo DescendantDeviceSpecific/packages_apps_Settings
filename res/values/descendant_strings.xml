@@ -104,4 +104,7 @@
     <string name="changelog_summary">Since the last update</string>
     <string name="changelog_error">Unable to load changelog</string>
 
+    <!-- Notification log -->
+    <string name="notification_log_summary">Show notifications history log</string>
+
 </resources>
