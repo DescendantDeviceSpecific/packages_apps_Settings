@@ -109,3 +109,18 @@
     </string-array>
 
 </resources>
+
+    <!-- QS Selector -->
+    <string-array name="qs_selector_entries" translatable="false">
+        <item>@string/qs_selector_default</item>
+        <item>@string/qs_selector_square</item>
+        <item>@string/qs_selector_super_bubble</item>
+    </string-array>
+
+    <string-array name="qs_selector_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+ </resources>
