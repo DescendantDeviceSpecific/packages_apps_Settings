@@ -115,12 +115,16 @@
         <item>@string/qs_selector_default</item>
         <item>@string/qs_selector_square</item>
         <item>@string/qs_selector_super_bubble</item>
+        <item>@string/qs_selector_teardrop</item>
+        <item>@string/qs_selector_zen</item>
     </string-array>
 
     <string-array name="qs_selector_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
+        <item>3</item>
+        <item>4</item>
     </string-array>
 
  </resources>
