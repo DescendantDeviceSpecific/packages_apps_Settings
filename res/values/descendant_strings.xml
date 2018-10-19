@@ -107,13 +107,13 @@
     <!-- Notification log -->
     <string name="notification_log_summary">Show notifications history log</string>
 
-    <!-- QS Selector -->
-    <string name="qs_category_title">QS customization</string>
-    <string name="qs_selector_title">QS theming</string>
-    <string name="qs_selector_default">Circle</string>
-    <string name="qs_selector_square">Square</string>
-    <string name="qs_selector_super_bubble">Super Bubble</string>
-    <string name="qs_selector_teardrop">Teardrop</string>
-    <string name="qs_selector_zen">Zen</string>
+    <!-- Icon Selector -->
+    <string name="icon_category_title">System Icons Customization</string>
+    <string name="icon_selector_title">System Icons Theming</string>
+    <string name="icon_selector_stock">Stock</string>
+    <string name="icon_selector_default">Descendant Circle</string>
+    <string name="icon_selector_square">Square</string>
+    <string name="icon_selector_super_bubble">Super Bubble</string>
+    <string name="icon_selector_teardrop">Teardrop</string>
 
 </resources>

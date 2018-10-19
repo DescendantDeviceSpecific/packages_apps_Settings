@@ -29,19 +29,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class QSPreferenceController extends AbstractPreferenceController implements
+public class SystemIconSwitcherPreferenceController extends AbstractPreferenceController implements
         Preference.OnPreferenceChangeListener {
 
-    private static final String QS_SELECTOR = "qs_selector";
-    private ListPreference mQSstyle;
+    private static final String ICON_SELECTOR = "icon_selector";
+    private ListPreference mICONstyle;
 
-    public QSPreferenceController(Context context) {
+    public SystemIconSwitcherPreferenceController(Context context) {
         super(context);
     }
 
     @Override
     public String getPreferenceKey() {
-        return QS_SELECTOR;
+        return ICON_SELECTOR;
     }
 
     @Override
@@ -52,21 +52,21 @@ public class QSPreferenceController extends AbstractPreferenceController impleme
     @Override
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
-        mQSstyle = (ListPreference) screen.findPreference(QS_SELECTOR);
-        int QSstyle = Settings.System.getInt(mContext.getContentResolver(),
-                Settings.System.QS_SELECTOR, 0);
-        int valueIndex = mQSstyle.findIndexOfValue(String.valueOf(QSstyle));
-        mQSstyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
-        mQSstyle.setSummary(mQSstyle.getEntry());
-        mQSstyle.setOnPreferenceChangeListener(this);
+        mICONstyle = (ListPreference) screen.findPreference(ICON_SELECTOR);
+        int ICONstyle = Settings.System.getInt(mContext.getContentResolver(),
+                Settings.System.ICON_SELECTOR, 0);
+        int valueIndex = mICONstyle.findIndexOfValue(String.valueOf(ICONstyle));
+        mICONstyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
+        mICONstyle.setSummary(mICONstyle.getEntry());
+        mICONstyle.setOnPreferenceChangeListener(this);
     }
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mQSstyle) {
+        if (preference == mICONstyle) {
             String value = (String) newValue;
-            Settings.System.putInt(mContext.getContentResolver(), Settings.System.QS_SELECTOR, Integer.valueOf(value));
-            int valueIndex = mQSstyle.findIndexOfValue(value);
-            mQSstyle.setSummary(mQSstyle.getEntries()[valueIndex]);
+            Settings.System.putInt(mContext.getContentResolver(), Settings.System.ICON_SELECTOR, Integer.valueOf(value));
+            int valueIndex = mICONstyle.findIndexOfValue(value);
+            mICONstyle.setSummary(mICONstyle.getEntries()[valueIndex]);
         }
         return true;
     }

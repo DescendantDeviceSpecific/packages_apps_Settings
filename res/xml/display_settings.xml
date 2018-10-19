@@ -149,22 +149,15 @@
         android:key="theme_category"
         android:title="@string/theme_category_title">
 
-        <ListPreference
-            android:key="dark_ui_mode"
-            android:title="@string/device_theme"
-            android:dialogTitle="@string/device_theme"
-            android:entries="@array/dark_ui_mode_entries"
-            android:entryValues="@array/dark_ui_mode_values" />
-
         <Preference
             android:key="accent_picker"
             android:title="@string/theme_accent_picker_title" />
 
         <ListPreference
-            android:key="qs_selector"
-            android:title="@string/qs_category_title"
-            android:entries="@array/qs_selector_entries"
-            android:entryValues="@array/qs_selector_values"
+            android:key="icon_selector"
+            android:title="@string/icon_category_title"
+            android:entries="@array/icon_selector_entries"
+            android:entryValues="@array/icon_selector_values"
             android:persistent="false" />
 
     </PreferenceCategory >
