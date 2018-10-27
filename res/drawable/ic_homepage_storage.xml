@@ -17,7 +17,7 @@
 
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
-<item android:drawable="@drawable/ic_descendant_circle" />
+<item android:drawable="@drawable/background_storage" />
 
     <item
         android:width="@dimen/dashboard_tile_foreground_image_size"
