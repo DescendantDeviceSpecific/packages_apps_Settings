@@ -139,5 +139,8 @@
 
     <!-- Suggestion card -->
     <color name="suggestion_tile_background">@*android:color/white</color>
+
+    <!-- Homepage icon tint -->
+    <color name="homepage_icon_tint">#ffffffff</color>
 </resources>
 

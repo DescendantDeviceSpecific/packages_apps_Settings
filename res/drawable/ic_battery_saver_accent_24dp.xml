@@ -19,7 +19,7 @@
         android:height="24dp"
         android:viewportWidth="24.0"
         android:viewportHeight="24.0"
-        android:tint="?android:attr/colorAccent">
+        android:tint="@color/homepage_icon_tint">
     <path
         android:fillColor="#FF000000"
         android:pathData="M15,14l-2,0l0,2l-2,0l0,-2l-2,0l0,-2l2,0l0,-2l2,0l0,2l2,0z"/>

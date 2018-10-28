@@ -76,13 +76,13 @@
         android:pathData="M73.63,41L68.13,41L64.01,45.2L64,53.6C64,54.37 64.62,55 65.38,55L73.63,55C74.38,55 75,54.37 75,53.6L75,42.4C75,41.63 74.38,41 73.63,41ZM69.5,45.2L68.13,45.2L68.13,42.4L69.5,42.4L69.5,45.2ZM71.56,45.2L70.19,45.2L70.19,42.4L71.56,42.4L71.56,45.2ZM73.63,45.2L72.25,45.2L72.25,42.4L73.63,42.4L73.63,45.2Z"
         android:strokeColor="#00000000"
         android:fillType="nonZero"
-        android:fillColor="?android:attr/colorAccent"
+        android:fillColor="@color/homepage_icon_tint"
         android:strokeWidth="1"/>
     <path
         android:pathData="M63.99,69L60,73L63.99,77L63.99,74L71,74L71,72L63.99,72L63.99,69ZM78,67L74.01,63L74.01,66L67,66L67,68L74.01,68L74.01,71L78,67Z"
         android:strokeColor="#00000000"
         android:fillType="nonZero"
-        android:fillColor="?android:attr/colorAccent"
+        android:fillColor="@color/homepage_icon_tint"
         android:strokeWidth="1"/>
     <path
         android:pathData="M64,126.08C98.29,126.08 126.08,98.29 126.08,64C126.08,29.71 98.29,1.92 64,1.92C29.71,1.92 1.92,29.71 1.92,64C1.92,98.29 29.71,126.08 64,126.08ZM64,128C28.65,128 0,99.35 0,64C0,28.65 28.65,0 64,0C99.35,0 128,28.65 128,64C128,99.35 99.35,128 64,128Z"
