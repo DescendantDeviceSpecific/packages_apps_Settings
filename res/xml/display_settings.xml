@@ -165,26 +165,24 @@
         android:key="theme_category"
         android:title="@string/theme_category_title">
 
-        <Preference
+       <Preference
             android:key="accent_picker"
             android:icon="@drawable/ic_accents"
             android:title="@string/theme_accent_picker_title" />
 
-        <ListPreference
-            android:key="icon_selector"
-            android:icon="@drawable/ic_sys_icon_theme"
-            android:title="@string/icon_category_title"
-            android:entries="@array/icon_selector_entries"
-            android:entryValues="@array/icon_selector_values"
-            android:persistent="false" />
+    <ListPreference
+        android:key="icon_selector"
+        android:title="@string/icon_category_title"
+        android:entries="@array/icon_selector_entries"
+        android:entryValues="@array/icon_selector_values"
+        android:persistent="false" />
 
-        <ListPreference
-            android:key="ui_selector"
-            android:icon="@drawable/ic_ui_changer"
-            android:title="@string/ui_category_title"
-            android:entries="@array/ui_selector_entries"
-            android:entryValues="@array/ui_selector_values"
-            android:persistent="false" />
+    <ListPreference
+        android:key="ui_selector"
+        android:title="@string/ui_category_title"
+        android:entries="@array/ui_selector_entries"
+        android:entryValues="@array/ui_selector_values"
+        android:persistent="false" />
 
     </PreferenceCategory >
 

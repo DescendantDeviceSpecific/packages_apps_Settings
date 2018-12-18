@@ -34,6 +34,7 @@ import com.android.settings.display.LiftToWakePreferenceController;
 import com.android.settings.display.NightDisplayPreferenceController;
 import com.android.settings.display.NightModePreferenceController;
 import com.android.settings.display.SystemIconSwitcherPreferenceController;
+import com.android.settings.display.UIPreferenceController;
 import com.android.settings.display.ScreenSaverPreferenceController;
 import com.android.settings.display.ShowOperatorNamePreferenceController;
 import com.android.settings.display.TapToWakePreferenceController;
@@ -89,6 +90,7 @@ public class DisplaySettings extends DashboardFragment {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new CameraGesturePreferenceController(context));
         controllers.add(new SystemIconSwitcherPreferenceController(context));
+        controllers.add(new UIPreferenceController(context));
         controllers.add(new LiftToWakePreferenceController(context));
         controllers.add(new NightDisplayPreferenceController(context));
         controllers.add(new NightModePreferenceController(context));

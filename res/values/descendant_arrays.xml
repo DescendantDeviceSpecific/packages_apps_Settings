@@ -125,4 +125,11 @@
         <item>4</item>
     </string-array>
 
+    <!-- UI Selector -->
+    <string name="ui_category_title">UI customization</string>
+    <string name="ui_selector_title">UI theming</string>
+    <string name="ui_selector_default">Stock</string>
+    <string name="ui_selector_square">Square UI</string>
+    <string name="ui_selector_roundier">Descendant Roundier</string>   
+
  </resources>
