@@ -34,11 +34,13 @@
         <Preference
                 android:key="configure_settings"
                 android:title="@string/wifi_configure_settings_preference_title"
+                android:icon="@drawable/ic_connection_pref_wifi"
                 android:fragment="com.android.settings.wifi.ConfigureWifiSettings" />
 
         <Preference
                 android:key="saved_networks"
                 android:title="@string/wifi_saved_access_points_label"
+                android:icon="@drawable/ic_saved_wifi"
                 android:fragment="com.android.settings.wifi.SavedAccessPointsWifiSettings" />
     </PreferenceCategory>
 </PreferenceScreen>

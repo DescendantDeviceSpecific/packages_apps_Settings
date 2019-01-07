@@ -22,20 +22,24 @@
 
     <com.android.settings.RestrictedListPreference
         android:key="security_setting_lock_screen_notif"
+        android:icon="@drawable/ic_notification"
         android:title="@string/lock_screen_notifications_title"
         android:summary="@string/summary_placeholder" />
 
     <com.android.settingslib.RestrictedSwitchPreference
         android:key="security_lockscreen_add_users_when_locked"
+        android:icon="@drawable/ic_add_user_lock"
         android:title="@string/user_add_on_lockscreen_menu" />
 
     <com.android.settingslib.RestrictedPreference
         android:key="owner_info_settings"
+        android:icon="@drawable/ic_lock_message"
         android:title="@string/owner_info_settings_title"
         android:summary="@string/owner_info_settings_summary" />
 
     <SwitchPreference
         android:key="security_setting_lockdown_enabled"
+        android:icon="@drawable/ic_lock_lockdown"
         android:title="@string/lockdown_settings_title"
         android:summary="@string/lockdown_settings_summary"
         settings:controller="com.android.settings.security.LockdownButtonPreferenceController"/>

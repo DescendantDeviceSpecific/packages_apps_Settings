@@ -26,6 +26,7 @@
 
     <com.android.settings.datausage.DataSaverPreference
         android:key="restrict_background"
+        android:icon="@drawable/ic_restrict_data"
         android:title="@string/data_saver_title"
         android:fragment="com.android.settings.datausage.DataSaverSummary"/>
 </PreferenceScreen>

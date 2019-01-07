@@ -26,6 +26,7 @@
         android:title="@string/captioning_standard_options_title" >
         <com.android.settings.accessibility.LocalePreference
             android:key="captioning_locale"
+            android:icon="@drawable/ic_subs_lang"
             android:summary="%s"
             android:title="@string/captioning_locale" />
 
@@ -33,11 +34,13 @@
             android:entries="@array/captioning_font_size_selector_titles"
             android:entryValues="@array/captioning_font_size_selector_values"
             android:key="captioning_font_size"
+            android:icon="@drawable/ic_font_dimen"
             android:summary="%s"
             android:title="@string/captioning_text_size" />
 
         <com.android.settings.accessibility.PresetPreference
             android:key="captioning_preset"
+            android:icon="@drawable/ic_theme"
             android:title="@string/captioning_preset" />
     </PreferenceCategory>
     <PreferenceCategory

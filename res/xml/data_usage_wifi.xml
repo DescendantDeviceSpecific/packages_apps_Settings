@@ -24,6 +24,7 @@
 
         <com.android.settings.datausage.DataUsagePreference
             android:key="wifi_data_usage"
+            android:icon="@drawable/ic_wifi_data_usage"
             android:title="@string/wifi_data_usage" />
 
     </com.android.settings.datausage.TemplatePreferenceCategory>

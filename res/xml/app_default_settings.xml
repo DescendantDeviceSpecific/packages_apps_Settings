@@ -19,10 +19,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="app_default_settings_screen"
+    android:icon="@drawable/ic_default_apps"
     android:title="@string/app_default_dashboard_title">
 
     <com.android.settings.widget.AppPreference
         android:key="assist_and_voice_input"
+        android:icon="@drawable/ic_vocal_output"
         android:title="@string/assist_and_voice_input_title"
         android:fragment="com.android.settings.applications.assist.ManageAssist"
         settings:keywords="@string/keywords_assist_input"/>

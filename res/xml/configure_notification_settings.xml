@@ -28,23 +28,27 @@
 
     <Preference
         android:title="@string/notification_log_title"
+        android:icon="@drawable/ic_notif_log"
         android:fragment="com.android.settings.notification.NotificationStation" />
 
     <!-- When device is locked -->
     <com.android.settings.RestrictedListPreference
         android:key="lock_screen_notifications"
+        android:icon="@drawable/ic_lock_on_screen"
         android:title="@string/lock_screen_notifications_title"
         android:summary="@string/summary_placeholder"/>
 
     <!-- Notification badging -->
     <SwitchPreference
         android:key="notification_badging"
+        android:icon="@drawable/ic_brightness_level"
         android:title="@string/notification_badging_title"
         settings:controller="com.android.settings.notification.BadgingNotificationPreferenceController"/>
 
     <!-- Pulse notification light -->
     <SwitchPreference
         android:key="notification_pulse"
+        android:icon="@drawable/ic_led"
         android:title="@string/notification_pulse_title"/>
     
     <!-- Notification lights -->
@@ -57,6 +61,7 @@
     <!-- Default notification ringtone -->
     <com.android.settings.DefaultRingtonePreference
         android:key="notification_default_ringtone"
+        android:icon="@drawable/ic_notif_sound"
         android:title="@string/notification_ringtone_title"
         android:dialogTitle="@string/notification_ringtone_title"
         android:summary="@string/summary_placeholder"
@@ -72,12 +77,14 @@
 
     <!--Preference
         android:key="gesture_swipe_down_fingerprint_notifications"
+        android:icon="@drawable/ic_fingerprint_24dp"
         android:title="@string/fingerprint_swipe_for_notifications_title"
         android:fragment="com.android.settings.gestures.SwipeToNotificationSettings"
         settings:controller="com.android.settings.gestures.SwipeToNotificationPreferenceController" /-->
 
     <com.android.settingslib.RestrictedPreference
         android:key="zen_mode_notifications"
+        android:icon="@drawable/ic_dnd"
         android:title="@string/zen_mode_settings_title"
         settings:useAdminDisabledSummary="true"
         android:fragment="com.android.settings.notification.ZenModeSettings"

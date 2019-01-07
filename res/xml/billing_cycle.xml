@@ -20,22 +20,27 @@
 
     <Preference
         android:key="billing_cycle"
+        android:icon="@drawable/ic_app_data_usage"
         android:title="@string/app_usage_cycle" />
 
     <SwitchPreference
         android:key="set_data_warning"
+        android:icon="@drawable/ic_warning_24dp"
         android:title="@string/set_data_warning"/>
 
     <Preference
         android:key="data_warning"
+        android:icon="@drawable/ic_data_warning"
         android:title="@string/data_warning" />
 
     <SwitchPreference
         android:key="set_data_limit"
+        android:icon="@drawable/ic_alert"
         android:title="@string/set_data_limit" />
 
     <Preference
         android:key="data_limit"
+        android:icon="@drawable/ic_data_limit"
         android:title="@string/data_limit" />
 
 </PreferenceScreen>

@@ -37,6 +37,7 @@
     <!-- Device name -->
     <com.android.settings.widget.ValidatedEditTextPreference
         android:key="device_name"
+        android:icon="@drawable/ic_device_phone"
         android:order="1"
         android:title="@string/my_device_info_device_name_preference_title"
         android:summary="@string/summary_placeholder"/>
@@ -60,6 +61,7 @@
     <Preference
         android:key="phone_number"
         android:order="4"
+        android:icon="@drawable/ic_phone_nr"
         android:title="@string/status_number"
         android:summary="@string/summary_placeholder"
         android:selectable="false"/>
@@ -67,12 +69,14 @@
     <Preference
         android:key="emergency_info"
         android:order="5"
+        android:icon="@drawable/ic_emergency_warn"
         android:title="@string/emergency_info_title"
         android:summary="@string/summary_placeholder"/>
 
     <!-- Legal information -->
     <!--Preference
         android:key="legal_container"
+        android:icon="@drawable/ic_legal_info"
         android:order="6"
         android:title="@string/legal_information"
         android:fragment="com.android.settings.LegalSettings"
@@ -82,6 +86,7 @@
     <Preference
         android:key="regulatory_info"
         android:order="7"
+        android:icon="@drawable/ic_legal_info"
         android:title="@string/regulatory_labels">
         <intent android:action="android.settings.SHOW_REGULATORY_INFO"/>
     </Preference>
@@ -89,6 +94,7 @@
     <!-- Safety & regulatory manual -->
     <Preference
         android:key="safety_info"
+        android:icon="@drawable/ic_legal_info"
         android:order="7"
         android:title="@string/safety_and_regulatory_info">
         <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO"/>
@@ -99,6 +105,7 @@
         android:key="sim_status"
         android:order="8"
         android:title="@string/sim_status_title"
+        android:icon="@drawable/ic_sim"
         settings:keywords="@string/keywords_sim_status"
         android:summary="@string/summary_placeholder"
         settings:allowDividerAbove="true"/>
@@ -108,6 +115,7 @@
         android:key="device_model"
         android:order="21"
         android:title="@string/hardware_info"
+        android:icon="@drawable/ic_model_and_hw"
         settings:keywords="@string/keywords_model_and_hardware"
         android:summary="@string/summary_placeholder"/>
 
@@ -116,6 +124,7 @@
         android:key="imei_info"
         android:order="22"
         android:title="@string/status_imei"
+        android:icon="@drawable/ic_imei"
         settings:keywords="@string/keywords_imei_info"
         android:summary="@string/summary_placeholder"/>
 
@@ -124,6 +133,7 @@
         android:key="firmware_version"
         android:order="32"
         android:title="@string/firmware_version"
+        android:icon="@drawable/ic_android"
         settings:keywords="@string/keywords_android_version"
         android:summary="@string/summary_placeholder"/>
 
@@ -132,6 +142,7 @@
         android:key="wifi_ip_address"
         android:order="34"
         android:title="@string/wifi_ip_address"
+        android:icon="@drawable/ic_ip_info"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
         settings:allowDividerAbove="true"/>
@@ -141,6 +152,7 @@
         android:key="wifi_mac_address"
         android:order="35"
         android:title="@string/status_wifi_mac_address"
+        android:icon="@drawable/ic_mac_address"
         android:summary="@string/summary_placeholder"
         android:selectable="false"/>
 
@@ -149,6 +161,7 @@
         android:key="bt_address"
         android:order="36"
         android:title="@string/status_bt_address"
+        android:icon="@drawable/ic_bt_address"
         android:summary="@string/summary_placeholder"
         android:selectable="false"/>
 
@@ -178,6 +191,7 @@
         android:key="build_number"
         android:order="43"
         android:title="@string/build_number"
+        android:icon="@drawable/ic_build_nr"
         android:summary="@string/summary_placeholder"
         settings:allowDividerAbove="true"/>
 
@@ -186,6 +200,8 @@
         android:key="descendant_version"
         android:order="44"
         android:title="@string/descendant_version"
-        android:summary="@string/descendant_version_default" />
+        android:icon="@drawable/ic_descendant_icon"
+        android:summary="@string/descendant_version_default" 
+        android:fragment="com.android.settings.descendant.Changelog"/>
 
 </PreferenceScreen>

@@ -24,14 +24,17 @@
 
         <com.android.settings.datausage.CellDataPreference
             android:key="data_usage_enable"
+            android:icon="@drawable/ic_mobile_data"
             android:title="@string/data_usage_enable_mobile" />
 
         <com.android.settings.datausage.DataUsagePreference
             android:key="cellular_data_usage"
+            android:icon="@drawable/ic_app_data_usage"
             android:title="@string/cellular_data_usage" />
 
         <com.android.settings.datausage.BillingCyclePreference
             android:key="billing_preference"
+            android:icon="@drawable/ic_bill_pref"
             android:title="@string/billing_cycle" />
 
     </com.android.settings.datausage.TemplatePreferenceCategory>

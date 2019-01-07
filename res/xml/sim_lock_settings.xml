@@ -20,12 +20,14 @@
 
     <SwitchPreference
             android:key="sim_toggle"
+            android:icon="@drawable/ic_lock_sim"
             android:title="@string/sim_pin_toggle"
             android:summaryOn="@string/sim_lock_on"
             android:summaryOff="@string/sim_lock_off"/>
 
     <com.android.settings.EditPinPreference
             android:key="sim_pin"
+            android:icon="@drawable/ic_change_sim_pin"
             android:dependency="sim_toggle"
             android:title="@string/sim_pin_change"
             android:dialogTitle="@string/sim_change_pin"

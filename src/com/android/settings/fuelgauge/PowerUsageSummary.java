@@ -230,6 +230,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         mBatteryUtils = BatteryUtils.getInstance(getContext());
         mAnomalySparseArray = new SparseArray<>();
 
+        mScreenUsagePref.setIcon(R.drawable.ic_sot);
         restartBatteryInfoLoader();
         mBatteryTipPreferenceController.restoreInstanceState(icicle);
         updateBatteryTipFlag(icicle);
@@ -376,6 +377,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
             mLastFullChargePref.setSubtitle(
                     StringUtil.formatRelativeTime(getContext(), lastFullChargeTime,
                             false /* withSeconds */));
+            mLastFullChargePref.setIcon(R.drawable.ic_battery_last_charge);
         }
     }
 

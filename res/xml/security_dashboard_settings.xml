@@ -40,18 +40,21 @@
 
         <com.android.settings.widget.GearPreference
             android:key="unlock_set_or_change"
+            android:icon="@drawable/ic_lockscreen"
             android:title="@string/unlock_set_unlock_launch_picker_title"
             android:summary="@string/summary_placeholder"
             settings:keywords="@string/keywords_lockscreen" />
 
         <Preference
             android:key="lockscreen_preferences"
+            android:icon="@drawable/ic_lockscreen_pref"
             android:title="@string/lockscreen_settings_title"
             android:summary="@string/summary_placeholder"
             android:fragment="com.android.settings.security.LockscreenDashboardFragment" />
 
         <Preference
             android:key="fingerprint_settings"
+            android:icon="@drawable/ic_fingerprint_24dp"
             android:title="@string/security_settings_fingerprint_preference_title"
             android:summary="@string/summary_placeholder"
             settings:keywords="@string/keywords_fingerprint_settings"/>
@@ -98,12 +101,14 @@
 
         <Preference
             android:key="location"
+            android:icon="@drawable/ic_geoloc"
             android:title="@string/location_settings_title"
             android:summary="@string/summary_placeholder"
             android:fragment="com.android.settings.location.LocationSettings" />
 
         <SwitchPreference
             android:key="show_password"
+            android:icon="@drawable/ic_show_psw"
             android:title="@string/show_password"
             android:summary="@string/show_password_summary"
             settings:controller="com.android.settings.security.ShowPasswordPreferenceController"/>
@@ -116,6 +121,7 @@
 
         <Preference
             android:key="manage_device_admin"
+            android:icon="@drawable/ic_admin_app"
             android:title="@string/manage_device_admin"
             android:summary="@string/summary_placeholder"
             android:fragment="com.android.settings.DeviceAdminSettings" />
@@ -131,6 +137,7 @@
     <Preference
         android:order="50"
         android:key="sim_lock_settings"
+        android:icon="@drawable/ic_lock_sim"
         android:title="@string/sim_lock_settings_category">
 
         <intent
@@ -143,6 +150,7 @@
     <Preference
         android:order="60"
         android:key="encryption_and_credential"
+        android:icon="@drawable/ic_encryption"
         android:title="@string/encryption_and_credential_settings_title"
         android:summary="@string/encryption_and_credential_settings_summary"
         android:fragment="com.android.settings.security.EncryptionAndCredential" />
@@ -150,6 +158,7 @@
     <Preference
         android:order="70"
         android:key="manage_trust_agents"
+        android:icon="@drawable/ic_trust_agent"
         android:title="@string/manage_trust_agents"
         android:summary="@string/summary_placeholder"
         android:fragment="com.android.settings.security.trustagent.TrustAgentSettings" />
@@ -157,6 +166,7 @@
     <Preference
         android:order="80"
         android:key="screen_pinning_settings"
+        android:icon="@drawable/ic_lock_on_screen"
         android:title="@string/screen_pinning_title"
         android:summary="@string/summary_placeholder"
         android:fragment="com.android.settings.security.ScreenPinningSettings" />

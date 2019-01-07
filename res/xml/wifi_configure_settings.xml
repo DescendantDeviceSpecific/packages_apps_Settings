@@ -45,6 +45,7 @@
 
     <Preference
         android:key="install_credentials"
+        android:icon="@drawable/ic_install_certs"
         android:title="@string/wifi_install_credentials">
         <intent android:action="android.credentials.INSTALL_AS_USER"
                 android:targetPackage="com.android.certinstaller"
@@ -56,20 +57,24 @@
     <Preference
         android:key="network_scorer_picker"
         android:title="@string/network_scorer_picker_title"
+        android:icon="@drawable/ic_net_score"
         android:fragment="com.android.settings.network.NetworkScorerPicker"
         settings:controller="com.android.settings.network.NetworkScorerPickerPreferenceController" />
 
     <Preference
         android:key="wifi_direct"
         android:title="@string/wifi_menu_p2p"
+        android:icon="@drawable/ic_wifi_direct"
         android:fragment="com.android.settings.wifi.p2p.WifiP2pSettings" />
 
     <Preference
         android:key="mac_address"
+        android:icon="@drawable/ic_mac_address"
         android:title="@string/wifi_advanced_mac_address_title" />
 
     <Preference
         android:key="current_ip_address"
+        android:icon="@drawable/ic_ip_info"        
         android:title="@string/wifi_advanced_ip_address_title" />
 
 </PreferenceScreen>

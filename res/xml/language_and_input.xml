@@ -33,10 +33,12 @@
         android:title="@string/keyboard_and_input_methods_category">
         <Preference
             android:key="virtual_keyboard_pref"
+            android:icon="@drawable/ic_virtual_keyboard"
             android:title="@string/virtual_keyboard_category"
             android:fragment="com.android.settings.inputmethod.VirtualKeyboardFragment" />
         <Preference
             android:key="physical_keyboard_pref"
+            android:icon="@drawable/ic_physic_keyboard"
             android:title="@string/physical_keyboard_title"
             android:summary="@string/summary_placeholder"
             android:fragment="com.android.settings.inputmethod.PhysicalKeyboardFragment" />
@@ -50,12 +52,14 @@
              See: InputMethodAndSubtypeUtil.removeUnnecessaryNonPersistentPreference. -->
         <Preference
             android:key="spellcheckers_settings"
+            android:icon="@drawable/ic_spellcheck"
             android:title="@string/spellcheckers_settings_title"
             android:persistent="false"
             android:fragment="com.android.settings.inputmethod.SpellCheckersSettings" />
 
         <com.android.settings.widget.GearPreference
             android:key="default_autofill"
+            android:icon="@drawable/ic_autocompile"
             android:title="@string/autofill_app"
             android:fragment="com.android.settings.applications.defaultapps.DefaultAutofillPicker"
             settings:keywords="@string/autofill_keywords" />
@@ -63,6 +67,7 @@
         <!-- User dictionary preference title and fragment will be set programmatically. -->
         <Preference
             android:key="key_user_dictionary_settings"
+            android:icon="@drawable/ic_dictionary"
             android:title="@string/user_dict_settings_title" />
     </PreferenceCategory>
 
@@ -72,11 +77,13 @@
 
         <com.android.settings.PointerSpeedPreference
             android:key="pointer_speed"
+            android:icon="@drawable/ic_pointer_speed"
             android:title="@string/pointer_speed"
             android:dialogTitle="@string/pointer_speed" />
 
         <Preference
             android:key="tts_settings_summary"
+            android:icon="@drawable/ic_vocal_output"
             android:title="@string/tts_settings_title"
             android:fragment="com.android.settings.tts.TextToSpeechSettings" />
 

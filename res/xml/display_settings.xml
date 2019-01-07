@@ -24,6 +24,7 @@
 
     <com.android.settingslib.RestrictedPreference
         android:key="brightness"
+        android:icon="@drawable/ic_brightness_level"
         android:title="@string/brightness"
         settings:keywords="@string/keywords_display_brightness_level"
         settings:useAdminDisabledSummary="true"
@@ -33,6 +34,7 @@
 
     <com.android.settings.display.NightDisplayPreference
         android:key="night_display"
+        android:icon="@drawable/ic_night_light"
         android:title="@string/night_display_title"
         android:fragment="com.android.settings.display.NightDisplaySettings"
         android:widgetLayout="@null"
@@ -41,6 +43,7 @@
 
     <Preference
         android:key="auto_brightness_entry"
+        android:icon="@drawable/ic_adaptive_brightness"
         android:title="@string/auto_brightness_title"
         android:summary="@string/auto_brightness_summary"
         android:fragment="com.android.settings.display.AutoBrightnessSettings"
@@ -48,6 +51,7 @@
 
     <com.android.settingslib.RestrictedPreference
         android:key="wallpaper"
+        android:icon="@drawable/ic_wallpapers"
         android:title="@string/wallpaper_settings_title"
         settings:keywords="@string/keywords_display_wallpaper"
         settings:useAdminDisabledSummary="true">
@@ -59,6 +63,7 @@
     <!-- Cross-listed item, if you change this, also change it in power_usage_summary.xml -->
     <com.android.settings.TimeoutListPreference
         android:key="screen_timeout"
+        android:icon="@drawable/ic_sleep_timeout"
         android:title="@string/screen_timeout"
         android:summary="@string/summary_placeholder"
         android:entries="@array/screen_timeout_entries"
@@ -67,6 +72,7 @@
 
     <SwitchPreference
         android:key="auto_rotate"
+        android:icon="@drawable/ic_auto_rotation"
         android:title="@string/accelerometer_title"
         settings:keywords="@string/keywords_auto_rotate"
         settings:controller="com.android.settings.display.AutoRotatePreferenceController"/>
@@ -79,6 +85,7 @@
 
     <Preference
         android:key="font_size"
+        android:icon="@drawable/ic_font_dimen"
         android:title="@string/title_font_size"
         android:fragment="com.android.settings.accessibility.ToggleFontSizePreferenceFragment"
         settings:controller="com.android.settings.display.FontSizePreferenceController"
@@ -86,6 +93,7 @@
 
     <com.android.settings.display.ScreenZoomPreference
         android:key="display_settings_screen_zoom"
+        android:icon="@drawable/ic_display_dimen"
         android:title="@string/screen_zoom_title"
         android:fragment="com.android.settings.display.ScreenZoomSettings"
         settings:keywords="@string/screen_zoom_keywords" />
@@ -101,8 +109,16 @@
 
     <Preference
         android:key="screensaver"
+        android:icon="@drawable/ic_screensaver"
         android:title="@string/screensaver_settings_title"
         android:fragment="com.android.settings.dream.DreamSettings" />
+
+    <com.android.settingslib.RestrictedPreference
+        android:key="ambient_display"
+        android:icon="@drawable/ic_ambient_display"
+        android:title="@string/ambient_display_screen_title"
+        android:fragment="com.android.settings.display.AmbientDisplaySettings"
+        settings:userRestriction="no_ambient_display" />
 
     <!-- Hide night mode for now
     <ListPreference
@@ -151,13 +167,23 @@
 
         <Preference
             android:key="accent_picker"
+            android:icon="@drawable/ic_accents"
             android:title="@string/theme_accent_picker_title" />
 
         <ListPreference
             android:key="icon_selector"
+            android:icon="@drawable/ic_sys_icon_theme"
             android:title="@string/icon_category_title"
             android:entries="@array/icon_selector_entries"
             android:entryValues="@array/icon_selector_values"
+            android:persistent="false" />
+
+        <ListPreference
+            android:key="ui_selector"
+            android:icon="@drawable/ic_ui_changer"
+            android:title="@string/ui_category_title"
+            android:entries="@array/ui_selector_entries"
+            android:entryValues="@array/ui_selector_values"
             android:persistent="false" />
 
     </PreferenceCategory >

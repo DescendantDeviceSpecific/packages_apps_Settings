@@ -23,11 +23,13 @@
 
     <com.android.settings.widget.ValidatedEditTextPreference
         android:key="wifi_tether_network_name"
+        android:icon="@drawable/ic_wifi_signal_4"
         android:title="@string/wifi_hotspot_name_title"
         android:summary="@string/summary_placeholder" />
 
     <ListPreference
         android:key="wifi_tether_security"
+        android:icon="@drawable/ic_security_lock_24dp"
         android:title="@string/wifi_security"
         android:summary="@string/summary_placeholder"
         android:entries="@array/wifi_tether_security"
@@ -35,16 +37,19 @@
 
     <com.android.settings.widget.ValidatedEditTextPreference
         android:key="wifi_tether_network_password"
+        android:icon="@drawable/ic_show_psw"
         android:persistent="false"
         android:title="@string/wifi_hotspot_password_title" />
 
     <SwitchPreference
         android:key="wifi_tether_auto_turn_off"
+        android:icon="@drawable/ic_wifi_signal_lock"
         android:title="@string/wifi_hotspot_auto_off_title"
         android:summary="@string/wifi_hotspot_auto_off_summary" />
 
     <ListPreference
         android:key="wifi_tether_network_ap_band"
+        android:icon="@drawable/ic_hotspot"
         android:title="@string/wifi_hotspot_ap_band_title"
         android:dialogLayout="@layout/hotspot_ap_band_selection_dialog"
         android:dialogTitle="@string/wifi_hotspot_ap_band_title"
