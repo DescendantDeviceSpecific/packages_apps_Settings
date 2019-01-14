@@ -53,6 +53,13 @@
         android:entryValues="@array/weather_unit_values"
         android:defaultValue="0" />
 
+    <org.descendant.settings.preferences.SystemSettingSwitchPreference
+        android:key="vibration_on_charge_state_changed"
+        android:icon="@drawable/ic_vib_on_charge"
+        android:title="@string/vibration_on_charge_state_changed_title"
+        android:summary="@string/vibration_on_charge_state_changed_summary"
+        android:defaultValue="true" />
+
     <!-- Work profile settings are at the bottom with high order value to avoid users thinking that
          any of the above settings (including dynamic) are specific to the work profile. -->
     <PreferenceCategory
