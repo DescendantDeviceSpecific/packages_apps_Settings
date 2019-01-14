@@ -60,6 +60,13 @@
         android:summary="@string/vibration_on_charge_state_changed_summary"
         android:defaultValue="true" />
 
+    <org.descendant.settings.preferences.SystemSettingSwitchPreference
+        android:key="wake_when_plugged_or_unplugged"
+        android:icon="@drawable/ic_wake_on_plug"
+        android:title="@string/wake_when_plugged_or_unplugged_title"
+        android:summary="@string/wake_when_plugged_or_unplugged_summary"
+        android:defaultValue="false" />
+
     <!-- Work profile settings are at the bottom with high order value to avoid users thinking that
          any of the above settings (including dynamic) are specific to the work profile. -->
     <PreferenceCategory
