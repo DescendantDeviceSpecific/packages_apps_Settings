@@ -87,7 +87,7 @@ public class AccountHeaderPreferenceControllerTest {
 
     @Test
     public void onResume_shouldDisplayAccountInEntityHeader() {
-        final Account account = new Account("name1@abc.com", "com.abc");
+        final Account account = new Account("name1@descendant.org", "org.descendant");
         Bundle args = new Bundle();
         args.putParcelable(AccountDetailDashboardFragment.KEY_ACCOUNT, account);
         args.putParcelable(AccountDetailDashboardFragment.KEY_USER_HANDLE, UserHandle.CURRENT);

@@ -64,8 +64,8 @@ public class AccountDetailDashboardFragmentTest {
 
         mFragment = new AccountDetailDashboardFragment();
         mFragment.setArguments(args);
-        mFragment.mAccountType = "com.abc";
-        mFragment.mAccount = new Account("name1@abc.com", "com.abc");
+        mFragment.mAccountType = "org.descendant";
+        mFragment.mAccount = new Account("name1@descendant.org", "org.descendant");
     }
 
     @Test
@@ -79,7 +79,7 @@ public class AccountDetailDashboardFragmentTest {
         final Tile tile = new Tile();
         final Bundle metaData = new Bundle();
         metaData.putString(METADATA_CATEGORY, CategoryKey.CATEGORY_ACCOUNT_DETAIL);
-        metaData.putString(METADATA_ACCOUNT_TYPE, "com.abc");
+        metaData.putString(METADATA_ACCOUNT_TYPE, "org.descendant");
         tile.metaData = metaData;
 
         assertThat(mFragment.displayTile(tile)).isTrue();
@@ -119,7 +119,7 @@ public class AccountDetailDashboardFragmentTest {
         tile.key = "key";
         tile.metaData = new Bundle();
         tile.metaData.putString(METADATA_CATEGORY, CategoryKey.CATEGORY_ACCOUNT);
-        tile.metaData.putString(METADATA_ACCOUNT_TYPE, "com.abc");
+        tile.metaData.putString(METADATA_ACCOUNT_TYPE, "org.descendant");
         tile.metaData.putString("com.android.settings.intent.action", Intent.ACTION_ASSIST);
         tile.intent = new Intent();
         tile.userHandle = null;
@@ -135,6 +135,6 @@ public class AccountDetailDashboardFragmentTest {
 
         final Intent intent = shadowOf(activity).getNextStartedActivityForResult().intent;
 
-        assertThat(intent.getStringExtra("extra.accountName")).isEqualTo("name1@abc.com");
+        assertThat(intent.getStringExtra("extra.accountName")).isEqualTo("name1@descendant.org");
     }
 }

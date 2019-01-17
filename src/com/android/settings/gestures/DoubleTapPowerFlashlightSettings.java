@@ -43,7 +43,7 @@ public class DoubleTapPowerFlashlightSettings extends DashboardFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.ABC;
+        return MetricsProto.MetricsEvent.DESCENDANT_SETTINGS;
     }
 
     @Override

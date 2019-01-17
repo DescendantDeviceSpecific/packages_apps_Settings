@@ -56,14 +56,14 @@
         settings:useAdditionalSummary="true"/>
 
     <!-- Custom led color -->
-    <com.abc.support.colorpicker.ColorPickerPreference
+    <org.descendant.support.colorpicker.ColorPickerPreference
         android:key="custom_light"
         android:dependency="lights"
         android:title="@string/custom_light_title"
         isledPicker="true"
         settings:defaultColorValue="0xFFFFFFFF"/>
 
-    <com.abc.support.preferences.CustomSeekBarPreference
+    <org.descendant.support.preferences.CustomSeekBarPreference
         android:key="custom_light_on_time"
         android:dependency="lights"
         android:title="@string/custom_light_on_time_title"
@@ -73,7 +73,7 @@
         settings:interval="100"
         settings:units="" />
 
-    <com.abc.support.preferences.CustomSeekBarPreference
+    <org.descendant.support.preferences.CustomSeekBarPreference
         android:key="custom_light_off_time"
         android:dependency="lights"
         android:title="@string/custom_light_off_time_title"
