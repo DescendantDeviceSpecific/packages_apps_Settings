@@ -32,7 +32,7 @@ import com.android.settingslib.core.lifecycle.events.OnResume;
 
 import com.android.settings.display.AccentPicker;
 
-import com.android.internal.util.du.Utils;
+import com.android.internal.util.descendant.Utils;
 
 public class AccentPickerPreferenceController extends AbstractPreferenceController
         implements PreferenceControllerMixin, LifecycleObserver, OnResume {

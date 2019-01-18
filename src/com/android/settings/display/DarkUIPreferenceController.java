@@ -25,7 +25,7 @@ import com.android.settings.R;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settings.core.PreferenceControllerMixin;
 
-import com.android.internal.util.du.Utils;
+import com.android.internal.util.descendant.Utils;
 
 public class DarkUIPreferenceController extends AbstractPreferenceController
         implements Preference.OnPreferenceChangeListener, PreferenceControllerMixin {
