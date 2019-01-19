@@ -49,4 +49,11 @@
         android:summary="@string/media_art_summary"
         android:defaultValue="false" />
 
+    <org.descendant.support.preferences.SecureSettingSwitchPreference
+        android:key="lockscreen_power_menu_disabled"
+        android:icon="@drawable/ic_power_menu_disabled"
+        android:title="@string/lockscreen_power_menu_disabled_title"
+        android:summary="@string/lockscreen_power_menu_disabled_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>

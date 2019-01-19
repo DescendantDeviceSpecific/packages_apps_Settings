@@ -22,5 +22,9 @@
 
     <!-- Notification lights -->
     <string name="notification_light_settings">Notification lights settings</string>
-    
+
+    <!-- Secure power menu -->
+    <string name="lockscreen_power_menu_disabled_title">No power menu when locked</string>
+    <string name="lockscreen_power_menu_disabled_summary">Disable power menu on secure lockscreen</string>
+
 </resources>
