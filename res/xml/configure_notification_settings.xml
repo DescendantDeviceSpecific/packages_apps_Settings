@@ -19,6 +19,13 @@
                   android:title="@string/configure_notification_settings"
                   android:key="configure_notification_settings">
 
+    <!-- Zen mode -->
+    <org.descendant.support.preferences.SystemSettingSwitchPreference
+        android:key="less_boring_heads_up"
+        android:title="@string/less_boring_heads_up_title"
+        android:summary="@string/less_boring_heads_up_summary"
+        android:defaultValue="true" />
+
     <!-- When device is locked -->
     <com.android.settings.RestrictedListPreference
         android:key="lock_screen_notifications"

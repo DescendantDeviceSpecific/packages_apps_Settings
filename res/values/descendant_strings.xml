@@ -16,4 +16,8 @@
     <string name="media_art_title">Media cover art</string>
     <string name="media_art_summary">Enable media cover art on the lockscreen during playback</string>
 
+    <!-- Zen mode -->
+    <string name="less_boring_heads_up_title">Zen mode</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
+
 </resources>
