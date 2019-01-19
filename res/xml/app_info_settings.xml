@@ -158,7 +158,7 @@
 
         <Preference
             android:key="install_other_apps"
-            android:title="@string/install_default_apps"
+            android:title="@string/install_other_apps"
             android:icon="@drawable/ic_apps"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.applications.appinfo.ExternalSourceDetailPreferenceController" />

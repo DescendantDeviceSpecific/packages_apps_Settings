@@ -125,11 +125,18 @@
         <item>4</item>
     </string-array>
 
-    <!-- UI Selector -->
-    <string name="ui_category_title">UI customization</string>
-    <string name="ui_selector_title">UI theming</string>
-    <string name="ui_selector_default">Stock</string>
-    <string name="ui_selector_square">Square UI</string>
-    <string name="ui_selector_roundier">Descendant Roundier</string>   
+    <!-- UI  Selector -->
+    <string-array name="ui_selector_entries" translatable="false">
+        <item>@string/ui_selector_default</item>
+        <item>@string/ui_selector_square</item>
+        <item>@string/ui_selector_roundier</item>
+    </string-array>
+
+    <string-array name="ui_selector_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    
 
  </resources>

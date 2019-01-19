@@ -24,7 +24,7 @@ import android.provider.Settings;
 
 import com.android.settingslib.core.AbstractPreferenceController;
 
-import com.android.internal.util.descendant.DescendantUtils;
+import com.android.internal.util.descendant.Utils;
 import libcore.util.Objects;
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +33,7 @@ import java.util.List;
 public class UIPreferenceController extends AbstractPreferenceController implements
         Preference.OnPreferenceChangeListener {
 
-    private static final String UI_SELECTOR = "ui_selector";
+    private static final String UI_SWITCHER = "ui_selector";
     private ListPreference mUIstyle;
 
     public UIPreferenceController(Context context) {
@@ -42,7 +42,7 @@ public class UIPreferenceController extends AbstractPreferenceController impleme
 
     @Override
     public String getPreferenceKey() {
-        return UI_SELECTOR;
+        return UI_SWITCHER;
     }
 
     @Override
@@ -53,9 +53,9 @@ public class UIPreferenceController extends AbstractPreferenceController impleme
     @Override
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
-        mUIstyle = (ListPreference) screen.findPreference(UI_SELECTOR);
+        mUIstyle = (ListPreference) screen.findPreference(UI_SWITCHER);
         int UIstyle = Settings.System.getInt(mContext.getContentResolver(),
-                Settings.System.UI_SELECTOR, 0);
+                Settings.System.UI_SWITCHER, 0);
         int valueIndex = mUIstyle.findIndexOfValue(String.valueOf(UIstyle));
         mUIstyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
         mUIstyle.setSummary(mUIstyle.getEntry());
@@ -65,10 +65,10 @@ public class UIPreferenceController extends AbstractPreferenceController impleme
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mUIstyle) {
             String value = (String) newValue;
-            Settings.System.putInt(mContext.getContentResolver(), Settings.System.UI_SELECTOR, Integer.valueOf(value));
+            Settings.System.putInt(mContext.getContentResolver(), Settings.System.UI_SWITCHER, Integer.valueOf(value));
             int valueIndex = mUIstyle.findIndexOfValue(value);
             mUIstyle.setSummary(mUIstyle.getEntries()[valueIndex]);
-            DescendantUtils.showSystemUiRestartDialog(mContext);
+            Utils.showSystemUiRestartDialog(mContext);
 
         }
         return true;

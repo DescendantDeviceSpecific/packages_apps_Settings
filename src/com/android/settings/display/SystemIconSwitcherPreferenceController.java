@@ -32,7 +32,7 @@ import java.util.List;
 public class SystemIconSwitcherPreferenceController extends AbstractPreferenceController implements
         Preference.OnPreferenceChangeListener {
 
-    private static final String ICON_SELECTOR = "icon_selector";
+    private static final String SYSTEM_ICON_SWITCHER = "icon_selector";
     private ListPreference mICONstyle;
 
     public SystemIconSwitcherPreferenceController(Context context) {
@@ -41,7 +41,7 @@ public class SystemIconSwitcherPreferenceController extends AbstractPreferenceCo
 
     @Override
     public String getPreferenceKey() {
-        return ICON_SELECTOR;
+        return SYSTEM_ICON_SWITCHER;
     }
 
     @Override
@@ -52,9 +52,9 @@ public class SystemIconSwitcherPreferenceController extends AbstractPreferenceCo
     @Override
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
-        mICONstyle = (ListPreference) screen.findPreference(ICON_SELECTOR);
+        mICONstyle = (ListPreference) screen.findPreference(SYSTEM_ICON_SWITCHER);
         int ICONstyle = Settings.System.getInt(mContext.getContentResolver(),
-                Settings.System.ICON_SELECTOR, 0);
+                Settings.System.SYSTEM_ICON_SWITCHER, 0);
         int valueIndex = mICONstyle.findIndexOfValue(String.valueOf(ICONstyle));
         mICONstyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
         mICONstyle.setSummary(mICONstyle.getEntry());
@@ -64,7 +64,7 @@ public class SystemIconSwitcherPreferenceController extends AbstractPreferenceCo
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mICONstyle) {
             String value = (String) newValue;
-            Settings.System.putInt(mContext.getContentResolver(), Settings.System.ICON_SELECTOR, Integer.valueOf(value));
+            Settings.System.putInt(mContext.getContentResolver(), Settings.System.SYSTEM_ICON_SWITCHER, Integer.valueOf(value));
             int valueIndex = mICONstyle.findIndexOfValue(value);
             mICONstyle.setSummary(mICONstyle.getEntries()[valueIndex]);
         }
