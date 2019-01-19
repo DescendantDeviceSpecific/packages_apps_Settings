@@ -20,4 +20,7 @@
     <string name="less_boring_heads_up_title">Zen mode</string>
     <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app</string>
 
+    <!-- Notification lights -->
+    <string name="notification_light_settings">Notification lights settings</string>
+    
 </resources>

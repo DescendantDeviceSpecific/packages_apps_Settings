@@ -42,6 +42,13 @@
     <SwitchPreference
         android:key="notification_pulse"
         android:title="@string/notification_pulse_title"/>
+    
+    <!-- Notification lights -->
+    <Preference
+        android:key="notification_light"
+        android:icon="@drawable/ic_notification_light"
+        android:fragment="com.android.settings.applications.manageapplications.ManageApplications"
+        android:title="@string/notification_light_settings" />
 
     <!-- Default notification ringtone -->
     <com.android.settings.DefaultRingtonePreference
