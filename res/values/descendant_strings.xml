@@ -67,4 +67,8 @@
     <string name="clock_date_left">Left of time</string>
     <string name="clock_date_position">Date position</string>
 
+    <!-- Gestures app -->
+    <string name="gestures_activity">Gestures and buttons</string>
+    <string name="gestures_activity_summary">Enable or disable system-wide gestures and personalize your buttons</string>
+
 </resources>
