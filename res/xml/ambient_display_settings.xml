@@ -58,4 +58,10 @@
 
     </PreferenceCategory>
 
+    <Preference
+        android:key="force_ambient_for_media_pref"
+        android:fragment="com.android.settings.AmbientTicker"
+        android:title="@string/force_ambient_for_media_pref_title"
+        android:summary="@string/force_ambient_for_media_pref_summary"/>
+
 </PreferenceScreen>
