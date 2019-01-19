@@ -53,21 +53,21 @@
         android:entryValues="@array/weather_unit_values"
         android:defaultValue="0" />
 
-    <org.descendant.settings.preferences.SystemSettingSwitchPreference
+    <org.descendant.support.preferences.SystemSettingSwitchPreference
         android:key="vibration_on_charge_state_changed"
         android:icon="@drawable/ic_vib_on_charge"
         android:title="@string/vibration_on_charge_state_changed_title"
         android:summary="@string/vibration_on_charge_state_changed_summary"
         android:defaultValue="true" />
 
-    <org.descendant.settings.preferences.SystemSettingSwitchPreference
+    <org.descendant.support.preferences.SystemSettingSwitchPreference
         android:key="wake_when_plugged_or_unplugged"
         android:icon="@drawable/ic_wake_on_plug"
         android:title="@string/wake_when_plugged_or_unplugged_title"
         android:summary="@string/wake_when_plugged_or_unplugged_summary"
         android:defaultValue="false" />
 
-    <org.descendant.settings.preferences.SecureSettingSwitchPreference
+    <org.descendant.support.preferences.SecureSettingSwitchPreference
         android:key="lockscreen_power_menu_disabled"
         android:icon="@drawable/ic_power_menu_disabled"
         android:title="@string/lockscreen_power_menu_disabled_title"
