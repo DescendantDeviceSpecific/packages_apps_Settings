@@ -48,7 +48,6 @@
         android:entries="@array/weather_unit_entries"
         android:entryValues="@array/weather_unit_values"
         android:defaultValue="0" />
-    </PreferenceCategory>
 
     <!-- Work profile settings are at the bottom with high order value to avoid users thinking that
          any of the above settings (including dynamic) are specific to the work profile. -->
