@@ -69,7 +69,7 @@
 
     <!-- Gestures app -->
     <string name="gestures_activity">Gestures and buttons</string>
-    <string name="gestures_activity_summary">Enable or disable system-wide gestures and personalize your buttons</string>
+    <string name="gestures_activity_summary">Swipe navigation, playback control, screenshot gesture</string>
 
     <!-- Weather -->
     <string name="weather_unit">Weather temperature unit</string>

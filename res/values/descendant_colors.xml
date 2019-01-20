@@ -18,4 +18,7 @@
     <color name="accent_picker_white_accent">@android:color/white</color>
     <color name="accent_picker_dark_accent">@android:color/black</color>
 
+    <!-- Homepage icon tint -->
+    <color name="homepage_icon_tint">#ffffffff</color>
+
 </resources>
