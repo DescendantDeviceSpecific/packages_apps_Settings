@@ -139,6 +139,8 @@ import com.android.settings.wifi.calling.WifiCallingSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
+import org.descendant.gestures.DescendantGestures;
+
 public class SettingsGateway {
 
     /**
@@ -265,6 +267,7 @@ public class SettingsGateway {
             ToggleBackupSettingFragment.class.getName(),
             PreviouslyConnectedDeviceDashboardFragment.class.getName(),
             RunningServices.class.getName(),
+            DescendantGestures.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -304,5 +307,6 @@ public class SettingsGateway {
             Settings.EnterprisePrivacySettingsActivity.class.getName(),
             Settings.MyDeviceInfoActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
+            Settings.DescendantGesturesActivity.class.getName(),
     };
 }
