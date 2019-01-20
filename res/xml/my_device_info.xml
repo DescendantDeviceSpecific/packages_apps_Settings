@@ -21,13 +21,6 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
-    <!-- Descendant about -->
-    <PreferenceScreen
-        android:key="descendant_about"
-        android:enabled="false"
-        android:order="-1"
-        android:layout="@layout/descendant_about"/>
-
     <com.android.settings.applications.LayoutPreference
         android:key="my_device_info_header"
         android:order="0"
@@ -48,14 +41,6 @@
         android:order="2"
         android:title="@string/my_device_info_account_preference_title"
         android:summary="@string/summary_placeholder"/>
-
-    <!-- Descendant about -->
-    <PreferenceScreen
-        android:key="descendant_about"
-        android:enabled="false"
-        android:order="3"
-        android:layout="@layout/descendant_about" 
-	android:fragment="com.android.settings.descendant.Changelog" />
 
     <!-- Phone number -->
     <Preference
