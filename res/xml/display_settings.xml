@@ -166,7 +166,7 @@
         <ListPreference
             android:key="dark_ui_mode"
             android:icon="@drawable/ic_theme"
-            android:title="@string/device_theme"
+            android:title="@string/dark_mode_title"
             android:dialogTitle="@string/device_theme"
             android:entries="@array/dark_ui_mode_entries"
             android:entryValues="@array/dark_ui_mode_values" />
