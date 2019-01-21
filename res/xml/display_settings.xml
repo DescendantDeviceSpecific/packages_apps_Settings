@@ -100,6 +100,7 @@
 
     <com.android.settings.display.DensityPreference
         android:key="density"
+        android:icon="@drawable/ic_min_density"
         android:title="@string/developer_smallest_width" />
 
     <SwitchPreference
@@ -167,6 +168,7 @@
 
         <ListPreference
             android:key="dark_ui_mode"
+            android:icon="@drawable/ic_theme"
             android:title="@string/device_theme"
             android:dialogTitle="@string/device_theme"
             android:entries="@array/dark_ui_mode_entries"
@@ -179,6 +181,7 @@
 
     <ListPreference
         android:key="icon_selector"
+        android:icon="@drawable/ic_sys_icon_theme"
         android:title="@string/icon_category_title"
         android:entries="@array/icon_selector_entries"
         android:entryValues="@array/icon_selector_values"
@@ -186,6 +189,7 @@
 
     <ListPreference
         android:key="ui_selector"
+        android:icon="@drawable/ic_ui_changer"
         android:title="@string/ui_category_title"
         android:entries="@array/ui_selector_entries"
         android:entryValues="@array/ui_selector_values"
