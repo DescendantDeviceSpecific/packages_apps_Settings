@@ -97,12 +97,4 @@
         android:fragment="com.android.settings.ClockDateSettings" />
     </PreferenceCategory>
 
-    <org.descendant.support.preferences.SystemSettingListPreference
-        android:key="lockscreen_clock_selection"
-        android:title="@string/lockscreen_clock_selection_title"
-        android:icon="@drawable/ic_clock_themes"
-        android:entries="@array/lockscreen_clock_selection_entries"
-        android:entryValues="@array/lockscreen_clock_selection_values"
-        android:defaultValue="0" />
-
 </PreferenceScreen>
