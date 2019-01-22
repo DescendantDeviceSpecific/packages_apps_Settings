@@ -41,6 +41,7 @@ import com.android.settings.system.SystemDashboardFragment;
 import com.android.settingslib.drawer.CategoryKey;
 
 import org.descendant.gestures.DescendantGestures;
+import org.descendant.utility.DescendantUtility;
 
 import java.util.Map;
 
@@ -104,6 +105,8 @@ public class DashboardFragmentRegistry {
         PARENT_TO_CATEGORY_KEY_MAP.put(NightDisplaySettings.class.getName(),
             CategoryKey.CATEGORY_NIGHT_DISPLAY);
         PARENT_TO_CATEGORY_KEY_MAP.put(DescendantGestures.class.getName(),
+                        CategoryKey.CATEGORY_SYSTEM_DEVELOPMENT);
+        PARENT_TO_CATEGORY_KEY_MAP.put(DescendantUtility.class.getName(),
                         CategoryKey.CATEGORY_SYSTEM_DEVELOPMENT);
         CATEGORY_KEY_TO_PARENT_MAP = new ArrayMap<>(PARENT_TO_CATEGORY_KEY_MAP.size());
 

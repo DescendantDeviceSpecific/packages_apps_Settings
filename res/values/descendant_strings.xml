@@ -159,5 +159,9 @@
 
     <!-- Theme -->
     <string name="dark_mode_title">Dark theme enabling</string>
-        
+
+    <!-- Utility -->
+    <string name="descendant_utility">Utility</string>
+    <string name="descendant_utility_summary">Recents panel, QS settings, Network monitor</string>
+
 </resources>

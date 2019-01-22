@@ -20,6 +20,7 @@ LOCAL_USE_AAPT2 := true
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_SRC_FILES += $(call all-java-files-under, ../Gestures/src)
+LOCAL_SRC_FILES += $(call all-java-files-under, ../Utility/src)
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     android-slices-builders \
@@ -51,7 +52,8 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     frameworks/support/v14/preference/res \
     frameworks/support/v7/appcompat/res \
     frameworks/support/v7/recyclerview/res \
-    packages/apps/Gestures/res
+    packages/apps/Gestures/res \
+    packages/apps/Utility/res
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
@@ -61,8 +63,9 @@ OCAL_AAPT_FLAGS := --auto-add-overlay \
     --extra-packages android.support.v17.preference \
     --extra-packages android.support.v7.appcompat \
     --extra-packages android.support.v7.recyclerview \
-    --extra-packages org.descendant.gestures
-
+    --extra-packages org.descendant.gestures \
+    --extra-packages org.descendant.utility
+    
 ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled
     LOCAL_JACK_ENABLED := incremental

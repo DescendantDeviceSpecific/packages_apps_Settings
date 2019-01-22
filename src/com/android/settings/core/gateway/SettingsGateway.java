@@ -140,6 +140,7 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import org.descendant.gestures.DescendantGestures;
+import org.descendant.utility.DescendantUtility;
 
 public class SettingsGateway {
 
@@ -268,6 +269,7 @@ public class SettingsGateway {
             PreviouslyConnectedDeviceDashboardFragment.class.getName(),
             RunningServices.class.getName(),
             DescendantGestures.class.getName(),
+            DescendantUtility.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -308,5 +310,6 @@ public class SettingsGateway {
             Settings.MyDeviceInfoActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
             Settings.DescendantGesturesActivity.class.getName(),
+            Settings.DescendantUtilityActivity.class.getName(),
     };
 }

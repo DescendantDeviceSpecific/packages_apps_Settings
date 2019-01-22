@@ -12,8 +12,10 @@
 -->
 <resources>
 
+    <!-- Homepage colors --> 
     <color name="homepage_gestures_app_background">#3232ff</color>
-
+    <color name="homepage_descendant_utility_background">#009688</color>
+    
     <!-- Accent picker -->
     <color name="accent_picker_white_accent">@android:color/white</color>
     <color name="accent_picker_dark_accent">@android:color/black</color>

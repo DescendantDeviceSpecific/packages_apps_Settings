@@ -169,4 +169,5 @@ public class Settings extends SettingsActivity {
     // Descendant Additions.
     public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
     public static class DescendantGesturesActivity extends SettingsActivity {}
+    public static class DescendantUtilityActivity extends SettingsActivity {}
 }
