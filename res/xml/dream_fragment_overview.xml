@@ -21,11 +21,13 @@
 
     <com.android.settings.widget.GearPreference
         android:key="current_screensaver"
+        android:icon="@drawable/ic_cur_screen"
         android:title="@string/screensaver_settings_current"
         android:fragment="com.android.settings.dream.CurrentDreamPicker" />
 
     <Preference
         android:key="when_to_start"
+        android:icon="@drawable/ic_set_clock"
         android:title="@string/screensaver_settings_when_to_dream"
         android:fragment="com.android.settings.dream.WhenToDreamPicker" />
 
