@@ -164,4 +164,11 @@
     <string name="descendant_utility">Utility</string>
     <string name="descendant_utility_summary">Recents panel, QS settings, Network monitor</string>
 
+    <!-- My device info -->
+    <string name="device_infos">Device informations</string>
+    <string name="sim_hw">SIM &amp; Hardware informations</string>
+    <string name="build_info">Build informations</string>
+    <string name="network_bt">Network and bluetooth informations</string>
+    <string name="contact_info">Contact informations</string>
+
 </resources>

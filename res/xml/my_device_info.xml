@@ -23,46 +23,77 @@
 
     <com.android.settings.applications.LayoutPreference
         android:key="my_device_info_header"
-        android:order="0"
+        android:order="-1"
         android:layout="@layout/settings_entity_header"
         android:selectable="false"/>
+
+    <PreferenceCategory
+        android:key="device_infos"
+        android:title="@string/device_infos">
+
+    <!-- Descendant versioning -->
+    <Preference
+        android:key="descendant_version"
+        android:order="1"
+        android:title="@string/descendant_version"
+        android:icon="@drawable/ic_descendant_icon"
+        android:summary="@string/descendant_version_default"
+        android:fragment="com.android.settings.descendant.Changelog"/>
+
+    <!-- Android version -->
+    <Preference
+        android:key="firmware_version"
+        android:order="2"
+        android:title="@string/firmware_version"
+        android:icon="@drawable/ic_android"
+        settings:keywords="@string/keywords_android_version"
+        android:summary="@string/summary_placeholder"/>
 
     <!-- Device name -->
     <com.android.settings.widget.ValidatedEditTextPreference
         android:key="device_name"
         android:icon="@drawable/ic_device_phone"
-        android:order="2"
+        android:order="3"
         android:title="@string/my_device_info_device_name_preference_title"
         android:summary="@string/summary_placeholder"/>
 
     <!-- Account name -->
     <Preference
         android:key="branded_account"
-        android:order="3"
+        android:order="4"
         android:title="@string/my_device_info_account_preference_title"
         android:summary="@string/summary_placeholder"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="contact_info"
+        android:title="@string/contact_info">
 
     <!-- Phone number -->
     <Preference
         android:key="phone_number"
-        android:order="4"
+        android:order="5"
         android:icon="@drawable/ic_phone_nr"
         android:title="@string/status_number"
         android:summary="@string/summary_placeholder"
         android:selectable="false"/>
 
+    <!-- Emergency infos -->
     <Preference
         android:key="emergency_info"
-        android:order="5"
+        android:order="6"
         android:icon="@drawable/ic_emergency_warn"
         android:title="@string/emergency_info_title"
         android:summary="@string/summary_placeholder"/>
+
+    </PreferenceCategory>
 
     <!-- Legal information -->
     <!--Preference
         android:key="legal_container"
         android:icon="@drawable/ic_legal_info"
-        android:order="6"
+        android:order="7"
         android:title="@string/legal_information"
         android:fragment="com.android.settings.LegalSettings"
         settings:allowDividerAbove="true"/-->
@@ -70,7 +101,7 @@
     <!-- Regulatory labels -->
     <Preference
         android:key="regulatory_info"
-        android:order="7"
+        android:order="8"
         android:icon="@drawable/ic_legal_info"
         android:title="@string/regulatory_labels">
         <intent android:action="android.settings.SHOW_REGULATORY_INFO"/>
@@ -80,20 +111,23 @@
     <Preference
         android:key="safety_info"
         android:icon="@drawable/ic_legal_info"
-        android:order="7"
+        android:order="9"
         android:title="@string/safety_and_regulatory_info">
         <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO"/>
     </Preference>
 
+    <PreferenceCategory
+        android:key="sim_hw"
+        android:title="@string/sim_hw">
+
     <!-- SIM status -->
     <Preference
         android:key="sim_status"
-        android:order="8"
+        android:order="10"
         android:title="@string/sim_status_title"
         android:icon="@drawable/ic_sim"
         settings:keywords="@string/keywords_sim_status"
-        android:summary="@string/summary_placeholder"
-        settings:allowDividerAbove="true"/>
+        android:summary="@string/summary_placeholder"/>
 
     <!-- Model & hardware -->
     <Preference
@@ -113,14 +147,11 @@
         settings:keywords="@string/keywords_imei_info"
         android:summary="@string/summary_placeholder"/>
 
-    <!-- Android version -->
-    <Preference
-        android:key="firmware_version"
-        android:order="32"
-        android:title="@string/firmware_version"
-        android:icon="@drawable/ic_android"
-        settings:keywords="@string/keywords_android_version"
-        android:summary="@string/summary_placeholder"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="network_bt"
+        android:title="@string/network_bt">
 
     <!--IP address -->
     <Preference
@@ -129,8 +160,7 @@
         android:title="@string/wifi_ip_address"
         android:icon="@drawable/ic_ip_info"
         android:summary="@string/summary_placeholder"
-        android:selectable="false"
-        settings:allowDividerAbove="true"/>
+        android:selectable="false"/>
 
     <!-- Wi-Fi MAC address -->
     <Preference
@@ -149,6 +179,8 @@
         android:icon="@drawable/ic_bt_address"
         android:summary="@string/summary_placeholder"
         android:selectable="false"/>
+
+    </PreferenceCategory>
 
     <!-- Manual -->
     <Preference
@@ -171,22 +203,18 @@
         android:title="@string/fcc_equipment_id"
         android:summary="@string/summary_placeholder"/>
 
+    <PreferenceCategory
+        android:key="build_info"
+        android:title="@string/build_info">
+
     <!-- Build number -->
     <Preference
         android:key="build_number"
         android:order="43"
         android:title="@string/build_number"
         android:icon="@drawable/ic_build_nr"
-        android:summary="@string/summary_placeholder"
-        settings:allowDividerAbove="true"/>
+        android:summary="@string/summary_placeholder"/>
 
-    <!-- Descendant versioning -->
-    <Preference
-        android:key="descendant_version"
-        android:order="1"
-        android:title="@string/descendant_version"
-        android:icon="@drawable/ic_descendant_icon"
-        android:summary="@string/descendant_version_default" 
-        android:fragment="com.android.settings.descendant.Changelog"/>
+    </PreferenceCategory>
 
 </PreferenceScreen>
