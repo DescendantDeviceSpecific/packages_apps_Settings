@@ -27,12 +27,14 @@
         <!-- sound vibration -->
         <Preference
             android:key="zen_sound_vibration_settings"
+            android:icon="@drawable/ic_notifications"
             android:title="@string/zen_sound_title"
             android:fragment="com.android.settings.notification.ZenModeSoundVibrationSettings"/>
 
         <!-- What to block (effects) -->
         <Preference
             android:key="zen_mode_block_effects_settings"
+            android:icon="@drawable/ic_notification"
             android:title="@string/zen_mode_restrict_notifications_title"
             android:fragment="com.android.settings.notification.ZenModeRestrictNotificationsSettings" />
     </PreferenceCategory>
@@ -41,10 +43,12 @@
         android:title="@string/zen_category_exceptions">
         <Preference
             android:key="zen_mode_calls_settings"
+            android:icon="@drawable/ic_local_phone_24_lib"
             android:title="@string/zen_mode_calls"
             android:fragment="com.android.settings.notification.ZenModeCallsSettings" />
         <Preference
             android:key="zen_mode_msg_event_reminder_settings"
+            android:icon="@drawable/ic_lock_message"
             android:title="@string/zen_msg_event_reminder_title"
             android:fragment="com.android.settings.notification.ZenModeMsgEventReminderSettings" />
 
@@ -55,11 +59,13 @@
         <!-- DND duration settings -->
         <Preference
             android:key="zen_mode_duration_settings"
+            android:icon="@drawable/ic_set_clock"
             android:title="@string/zen_mode_duration_settings_title" />
 
         <!-- Automatic rules -->
         <Preference
             android:key="zen_mode_automation_settings"
+            android:icon="@drawable/ic_adaptive_brightness"
             android:title="@string/zen_mode_automation_settings_title"
             android:fragment="com.android.settings.notification.ZenModeAutomationSettings" />
     </PreferenceCategory>
