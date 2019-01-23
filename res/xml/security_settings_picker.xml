@@ -26,7 +26,7 @@
 
     <com.android.settingslib.RestrictedPreference
             android:key="unlock_set_none"
-            android:icon="@drawable/ic_unlock_set_off"
+            android:icon="@drawable/ic_swipe"
             android:title="@string/unlock_set_unlock_none_title"
             android:persistent="false"/>
 

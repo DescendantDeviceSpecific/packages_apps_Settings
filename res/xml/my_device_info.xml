@@ -31,14 +31,14 @@
     <com.android.settings.widget.ValidatedEditTextPreference
         android:key="device_name"
         android:icon="@drawable/ic_device_phone"
-        android:order="1"
+        android:order="2"
         android:title="@string/my_device_info_device_name_preference_title"
         android:summary="@string/summary_placeholder"/>
 
     <!-- Account name -->
     <Preference
         android:key="branded_account"
-        android:order="2"
+        android:order="3"
         android:title="@string/my_device_info_account_preference_title"
         android:summary="@string/summary_placeholder"/>
 
@@ -183,7 +183,7 @@
     <!-- Descendant versioning -->
     <Preference
         android:key="descendant_version"
-        android:order="44"
+        android:order="1"
         android:title="@string/descendant_version"
         android:icon="@drawable/ic_descendant_icon"
         android:summary="@string/descendant_version_default" 
