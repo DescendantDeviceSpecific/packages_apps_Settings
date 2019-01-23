@@ -28,6 +28,7 @@
 
     <ListPreference
         android:key="double_tap_power_flashlight"
+        android:icon="@drawable/ic_flashlight"
         android:title="@string/double_tap_power_flashlight_title"
         android:entries="@array/double_tap_power_flashlight_entries"
         android:entryValues="@array/double_tap_power_flashlight_values"
