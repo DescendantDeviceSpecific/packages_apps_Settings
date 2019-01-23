@@ -29,6 +29,7 @@
     <!-- Cross-listed item, if you change this, also change it in power_usage_summary.xml -->
     <com.android.settingslib.RestrictedSwitchPreference
         android:key="auto_brightness"
+        android:icon="@drawable/ic_enable"
         android:title="@string/auto_brightness_title"
         settings:keywords="@string/keywords_display_auto_brightness"
         settings:controller="com.android.settings.display.AutoBrightnessPreferenceController"
