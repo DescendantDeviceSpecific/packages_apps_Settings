@@ -28,7 +28,7 @@
 
         <SwitchPreference
             android:key="ambient_display_always_on"
-            androic:icon="@drawable/ic_enable"
+            android:icon="@drawable/ic_enable"
             android:title="@string/doze_always_on_title"
             android:summary="@string/doze_always_on_summary"
             settings:controller="com.android.settings.display.AmbientDisplayAlwaysOnPreferenceController" />
@@ -64,7 +64,7 @@
 
     <Preference
         android:key="force_ambient_for_media_pref"
-        andorid:icon="@drawable/ic_music_note"
+        android:icon="@drawable/ic_music_note"
         android:fragment="com.android.settings.AmbientTicker"
         android:title="@string/force_ambient_for_media_pref_title"
         android:summary="@string/force_ambient_for_media_pref_summary"/>
