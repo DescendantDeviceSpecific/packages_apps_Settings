@@ -32,7 +32,7 @@ import java.util.List;
 public class SystemIconSwitcherPreferenceController extends AbstractPreferenceController implements
         Preference.OnPreferenceChangeListener {
 
-    private static final String SYSTEM_ICON_SWITCHER = "icon_selector";
+    private static final String SYSTEM_ICON_SWITCHER = "system_icon_switcher";
     private ListPreference mICONstyle;
 
     public SystemIconSwitcherPreferenceController(Context context) {

@@ -33,7 +33,7 @@ import java.util.List;
 public class UIPreferenceController extends AbstractPreferenceController implements
         Preference.OnPreferenceChangeListener {
 
-    private static final String UI_SWITCHER = "ui_selector";
+    private static final String UI_SWITCHER = "ui_switcher";
     private ListPreference mUIstyle;
 
     public UIPreferenceController(Context context) {
@@ -68,8 +68,6 @@ public class UIPreferenceController extends AbstractPreferenceController impleme
             Settings.System.putInt(mContext.getContentResolver(), Settings.System.UI_SWITCHER, Integer.valueOf(value));
             int valueIndex = mUIstyle.findIndexOfValue(value);
             mUIstyle.setSummary(mUIstyle.getEntries()[valueIndex]);
-            Utils.showSystemUiRestartDialog(mContext);
-
         }
         return true;
     }
