@@ -177,7 +177,7 @@
             android:title="@string/theme_accent_picker_title" />
 
     <ListPreference
-        android:key="icon_selector"
+        android:key="system_icon_switcher"
         android:icon="@drawable/ic_sys_icon_theme"
         android:title="@string/icon_category_title"
         android:entries="@array/icon_selector_entries"
@@ -185,7 +185,7 @@
         android:persistent="false" />
 
     <ListPreference
-        android:key="ui_selector"
+        android:key="ui_switcher"
         android:icon="@drawable/ic_ui_changer"
         android:title="@string/ui_category_title"
         android:entries="@array/ui_selector_entries"
