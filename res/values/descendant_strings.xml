@@ -115,6 +115,7 @@
     <string name="icon_selector_square">Square</string>
     <string name="icon_selector_super_bubble">Super Bubble</string>
     <string name="icon_selector_teardrop">Teardrop</string>
+    <string name="icon_selector_lemon">Lemon</string>
 
     <!-- Power plug events -->
     <string name="vibration_on_charge_state_changed_title">Vibrate on plug</string>
