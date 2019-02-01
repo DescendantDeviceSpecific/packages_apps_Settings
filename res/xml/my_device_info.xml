@@ -76,10 +76,18 @@
         android:title="@string/my_device_info_device_name_preference_title"
         android:summary="@string/summary_placeholder"/>
 
+    <!-- Up time -->
+    <Preference
+        android:key="status_up_time"
+        android:order="5"
+        android:title="@string/status_up_time"
+        android:summary="@string/summary_placeholder"
+        android:selectable="false"/>
+
     <!-- Account name -->
     <Preference
         android:key="branded_account"
-        android:order="5"
+        android:order="6"
         android:title="@string/my_device_info_account_preference_title"
         android:summary="@string/summary_placeholder"/>
 
@@ -92,7 +100,7 @@
     <!-- Phone number -->
     <Preference
         android:key="phone_number"
-        android:order="6"
+        android:order="7"
         android:icon="@drawable/ic_phone_nr"
         android:title="@string/status_number"
         android:summary="@string/summary_placeholder"
@@ -101,7 +109,7 @@
     <!-- Emergency infos -->
     <Preference
         android:key="emergency_info"
-        android:order="7"
+        android:order="8"
         android:icon="@drawable/ic_emergency_warn"
         android:title="@string/emergency_info_title"
         android:summary="@string/summary_placeholder"/>
@@ -112,7 +120,7 @@
     <!--Preference
         android:key="legal_container"
         android:icon="@drawable/ic_legal_info"
-        android:order="8"
+        android:order="9"
         android:title="@string/legal_information"
         android:fragment="com.android.settings.LegalSettings"
         settings:allowDividerAbove="true"/-->
@@ -120,7 +128,7 @@
     <!-- Regulatory labels -->
     <Preference
         android:key="regulatory_info"
-        android:order="9"
+        android:order="10"
         android:icon="@drawable/ic_legal_info"
         android:title="@string/regulatory_labels">
         <intent android:action="android.settings.SHOW_REGULATORY_INFO"/>
@@ -130,7 +138,7 @@
     <Preference
         android:key="safety_info"
         android:icon="@drawable/ic_legal_info"
-        android:order="10"
+        android:order="11"
         android:title="@string/safety_and_regulatory_info">
         <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO"/>
     </Preference>
@@ -196,7 +204,7 @@
     <!-- Build number -->
     <Preference
         android:key="build_number"
-        android:order="43"
+        android:order="44"
         android:title="@string/build_number"
         android:icon="@drawable/ic_build_nr"
         android:summary="@string/summary_placeholder"/>
