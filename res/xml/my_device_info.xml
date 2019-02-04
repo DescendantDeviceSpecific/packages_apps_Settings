@@ -117,39 +117,6 @@
     </Preference>
 
     <PreferenceCategory
-        android:key="sim_hw"
-        android:title="@string/sim_hw">
-
-    <!-- SIM status -->
-    <Preference
-        android:key="sim_status"
-        android:order="10"
-        android:title="@string/sim_status_title"
-        android:icon="@drawable/ic_sim"
-        settings:keywords="@string/keywords_sim_status"
-        android:summary="@string/summary_placeholder"/>
-
-    <!-- Model & hardware -->
-    <Preference
-        android:key="device_model"
-        android:order="21"
-        android:title="@string/hardware_info"
-        android:icon="@drawable/ic_model_and_hw"
-        settings:keywords="@string/keywords_model_and_hardware"
-        android:summary="@string/summary_placeholder"/>
-
-    <!-- IMEI -->
-    <Preference
-        android:key="imei_info"
-        android:order="22"
-        android:title="@string/status_imei"
-        android:icon="@drawable/ic_imei"
-        settings:keywords="@string/keywords_imei_info"
-        android:summary="@string/summary_placeholder"/>
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:key="network_bt"
         android:title="@string/network_bt">
 
@@ -213,6 +180,39 @@
         android:order="43"
         android:title="@string/build_number"
         android:icon="@drawable/ic_build_nr"
+        android:summary="@string/summary_placeholder"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="sim_hw"
+        android:title="@string/sim_hw">
+
+    <!-- SIM status -->
+    <Preference
+        android:key="sim_status"
+        android:order="44"
+        android:title="@string/sim_status_title"
+        android:icon="@drawable/ic_sim"
+        settings:keywords="@string/keywords_sim_status"
+        android:summary="@string/summary_placeholder"/>
+
+    <!-- Model & hardware -->
+    <Preference
+        android:key="device_model"
+        android:order="45"
+        android:title="@string/hardware_info"
+        android:icon="@drawable/ic_model_and_hw"
+        settings:keywords="@string/keywords_model_and_hardware"
+        android:summary="@string/summary_placeholder"/>
+
+    <!-- IMEI -->
+    <Preference
+        android:key="imei_info"
+        android:order="46"
+        android:title="@string/status_imei"
+        android:icon="@drawable/ic_imei"
+        settings:keywords="@string/keywords_imei_info"
         android:summary="@string/summary_placeholder"/>
 
     </PreferenceCategory>
