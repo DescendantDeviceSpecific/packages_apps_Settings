@@ -3384,7 +3384,7 @@
         <activity android:name=".Settings$DescendantUtilityActivity"
                   android:label="@string/descendant_utility"
                   android:icon="@drawable/ic_descendant_utility">
-            <intent-filter android:priority="0">
+            <intent-filter android:priority="8">
                 <action android:name="com.android.settings.action.SETTINGS"/>
             </intent-filter>
             <meta-data android:name="com.android.settings.category"

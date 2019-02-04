@@ -155,6 +155,7 @@
             settings:userRestriction="no_ambient_display" />
          <Preference
             android:key="ambient_display_custom"
+            android:icon="@drawable/ic_ambient_display"
             android:title="@string/ambient_display_screen_title" />
      </PreferenceCategory>
 
