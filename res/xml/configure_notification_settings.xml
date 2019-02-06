@@ -25,7 +25,7 @@
         android:icon="@drawable/ic_focus_mode"
         android:title="@string/less_boring_heads_up_title"
         android:summary="@string/less_boring_heads_up_summary"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
 
     <Preference
         android:title="@string/notification_log_title"
