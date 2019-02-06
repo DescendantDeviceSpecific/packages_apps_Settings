@@ -43,13 +43,13 @@
 
     <SwitchPreference
         android:key="wifi_tether_auto_turn_off"
-        android:icon="@drawable/ic_wifi_signal_lock"
+        android:icon="@drawable/ic_wifi_tether_off"
         android:title="@string/wifi_hotspot_auto_off_title"
         android:summary="@string/wifi_hotspot_auto_off_summary" />
 
     <ListPreference
         android:key="wifi_tether_network_ap_band"
-        android:icon="@drawable/ic_hotspot"
+        android:icon="@drawable/ic_ap_band"
         android:title="@string/wifi_hotspot_ap_band_title"
         android:dialogLayout="@layout/hotspot_ap_band_selection_dialog"
         android:dialogTitle="@string/wifi_hotspot_ap_band_title"
