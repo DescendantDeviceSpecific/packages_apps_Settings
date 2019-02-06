@@ -74,7 +74,7 @@
         android:title="@string/notification_sound_vib_screen_on_title"
         android:icon="@drawable/ic_notification_sound_vib_screen_on"
         android:summary="@string/notification_sound_vib_screen_on_summary"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
 
     <!--Preference
         android:key="gesture_swipe_down_fingerprint_notifications"
