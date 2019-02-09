@@ -82,7 +82,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     private static final boolean DEBUG = false;
     private static final String KEY_BATTERY_HEADER = "battery_header";
     private static final String KEY_BATTERY_TIP = "battery_tip";
-    private static final int BATTERY_ANIMATION_DURATION_MS_PER_LEVEL = 30;
+    private static final int BATTERY_ANIMATION_DURATION_MS_PER_LEVEL = 15;
 
     @VisibleForTesting
     static final String ARG_BATTERY_LEVEL = "key_battery_level";
