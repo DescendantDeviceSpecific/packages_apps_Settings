@@ -31,6 +31,7 @@
             android:icon="@drawable/ic_enable"
             android:title="@string/doze_always_on_title"
             android:summary="@string/doze_always_on_summary"
+            android:defaultValue="false"
             settings:controller="com.android.settings.display.AmbientDisplayAlwaysOnPreferenceController" />
 
         <Preference
@@ -38,6 +39,7 @@
             android:icon="@drawable/ic_dt2s"
             android:title="@string/ambient_display_title"
             android:fragment="com.android.settings.gestures.DoubleTapScreenSettings"
+            android:defaultValue="false"
             settings:controller="com.android.settings.gestures.DoubleTapScreenPreferenceController" />
 
         <Preference
@@ -45,6 +47,7 @@
             android:icon="@drawable/ic_pick_up"
             android:title="@string/ambient_display_pickup_title"
             android:fragment="com.android.settings.gestures.PickupGestureSettings"
+            android:defaultValue="false"
             settings:controller="com.android.settings.gestures.PickupGesturePreferenceController" />
 
     </PreferenceCategory>
@@ -58,6 +61,7 @@
             android:icon="@drawable/ic_notification"
             android:title="@string/doze_title"
             android:summary="@string/doze_summary"
+            android:defaultValue="false"
             settings:controller="com.android.settings.display.AmbientDisplayNotificationsPreferenceController" />
 
     </PreferenceCategory>
