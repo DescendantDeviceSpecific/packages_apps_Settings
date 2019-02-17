@@ -128,6 +128,14 @@
         android:ringtoneType="alarm"
         android:order="-80"/>
 
+    <!-- Ambient ticker -->
+    <Preference
+        android:key="force_ambient_for_media_pref"
+        android:icon="@drawable/ic_music_note"
+        android:fragment="com.android.settings.AmbientTicker"
+        android:title="@string/force_ambient_for_media_pref_title"
+        android:summary="@string/force_ambient_for_media_pref_summary"/>
+
     <!-- Other sounds -->
     <PreferenceCategory
           android:key="other_sounds_and_vibrations_category"
