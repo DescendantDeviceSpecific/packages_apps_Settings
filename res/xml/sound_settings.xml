@@ -134,6 +134,7 @@
         android:icon="@drawable/ic_music_note"
         android:fragment="com.android.settings.AmbientTicker"
         android:title="@string/force_ambient_for_media_pref_title"
+        android:defaultValue="false"
         android:summary="@string/force_ambient_for_media_pref_summary"/>
 
     <!-- Other sounds -->
