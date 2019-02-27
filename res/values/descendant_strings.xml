@@ -220,4 +220,14 @@
     <string name="night_auto_value_min">Minimum brightness</string>
     <string name="night_bright_low">Low brightness</string>
     <string name="night_bright_midlow">Mid low brightness</string>
+
+    <!-- Less Notification sounds -->
+    <string name="less_notification_sounds_title">Smart notification sounds</string>
+    <string name="less_notification_sounds_summary">Play the notification sound of each app only once per set time period</string>
+    <string name="less_notification_sounds_default">App default</string>
+    <string name="less_notification_sounds_10s">Every 10 seconds</string>
+    <string name="less_notification_sounds_30s">Every 30 seconds</string>
+    <string name="less_notification_sounds_1m">Every minute</string>
+    <string name="less_notification_sounds_2m">Every 2 minutes</string>
+
 </resources>

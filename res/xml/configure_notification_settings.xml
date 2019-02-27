@@ -27,6 +27,15 @@
         android:summary="@string/less_boring_heads_up_summary"
         android:defaultValue="false" />
 
+    <!-- Smart notifications -->
+    <ListPreference
+        android:key="less_notification_sounds"
+        android:icon="@drawable/ic_less_notification_sounds"
+        android:title="@string/less_notification_sounds_title"
+        android:summary="@string/less_notification_sounds_summary"
+        android:entries="@array/less_notification_sounds_entries"
+        android:entryValues="@array/less_notification_sounds_values" />
+
     <Preference
         android:title="@string/notification_log_title"
         android:icon="@drawable/ic_notif_log"

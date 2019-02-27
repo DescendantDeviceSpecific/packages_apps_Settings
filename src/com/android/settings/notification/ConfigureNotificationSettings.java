@@ -19,13 +19,17 @@ package com.android.settings.notification;
 import android.app.Activity;
 import android.app.Application;
 import android.app.Fragment;
+import android.content.ContentResolver;
+import android.content.res.Resources;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.UserHandle;
+import android.provider.Settings;
 import android.provider.SearchIndexableResource;
 import android.support.annotation.VisibleForTesting;
 import android.support.v7.preference.Preference;
+import android.support.v7.preference.ListPreference;
 import android.text.TextUtils;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
@@ -43,7 +47,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ConfigureNotificationSettings extends DashboardFragment {
+public class ConfigureNotificationSettings extends DashboardFragment implements
+    Preference.OnPreferenceChangeListener {
+
     private static final String TAG = "ConfigNotiSettings";
 
     @VisibleForTesting
@@ -63,6 +69,8 @@ public class ConfigureNotificationSettings extends DashboardFragment {
     private static final int REQUEST_CODE = 200;
     private static final String SELECTED_PREFERENCE_KEY = "selected_preference";
 
+    private ListPreference mAnnoyingNotification;
+
     @Override
     public int getMetricsCategory() {
         return MetricsEvent.CONFIGURE_NOTIFICATION;
@@ -76,6 +84,17 @@ public class ConfigureNotificationSettings extends DashboardFragment {
     @Override
     protected int getPreferenceScreenResId() {
         return R.xml.configure_notification_settings;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mAnnoyingNotification = (ListPreference) findPreference("less_notification_sounds");
+        mAnnoyingNotification.setOnPreferenceChangeListener(this);
+        int threshold = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD,
+                30000, UserHandle.USER_CURRENT);
+        mAnnoyingNotification.setValue(String.valueOf(threshold));
     }
 
     @Override
@@ -186,6 +205,18 @@ public class ConfigureNotificationSettings extends DashboardFragment {
                                 blockedAppCount, blockedAppCount));
             }
         }
+    }
+
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference.equals(mAnnoyingNotification)) {
+            int mode = Integer.parseInt(((String) newValue).toString());
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD, mode, UserHandle.USER_CURRENT);
+            return true;
+        }
+
+        return false;
     }
 
     public static final SummaryLoader.SummaryProviderFactory SUMMARY_PROVIDER_FACTORY =
