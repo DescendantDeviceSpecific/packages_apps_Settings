@@ -330,4 +330,8 @@
     <dimen name="reset_checkbox_title_text_size">18sp</dimen>
     <dimen name="reset_checkbox_summary_text_size">14sp</dimen>
 
+    <!-- Searchbar -->
+    <dimen name="search_bar_container_height">80dp</dimen>
+    <dimen name="search_bar_container_marginTop">0dp</dimen>
+
 </resources>

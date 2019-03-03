@@ -26,7 +26,8 @@
     <FrameLayout
         android:id="@+id/search_bar_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/search_bar_container_height"
+        android:layout_marginTop="@dimen/search_bar_container_marginTop"
         android:background="?android:attr/colorAccent">
         <android.support.v7.widget.CardView
             android:id="@+id/search_bar"
