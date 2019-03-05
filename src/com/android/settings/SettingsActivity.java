@@ -292,10 +292,12 @@ public class SettingsActivity extends SettingsDrawerActivity
         }
 
         final boolean deviceProvisioned = Utils.isDeviceProvisioned(this);
+        final boolean thumbUIsetting = Utils.getThumbUIStatus(this);
+
         if (mIsShowingDashboard) {
-            findViewById(R.id.search_bar).setVisibility(
-                    deviceProvisioned ? View.VISIBLE : View.INVISIBLE);
-            findViewById(R.id.action_bar).setVisibility(View.GONE);
+                findViewById(R.id.search_bar).setVisibility(
+                        deviceProvisioned ? View.VISIBLE : View.INVISIBLE);
+            findViewById(R.id.action_bar).setVisibility(thumbUIsetting ? View.VISIBLE : View.GONE);
             final Toolbar toolbar = findViewById(R.id.search_action_bar);
             FeatureFactory.getFactory(this).getSearchFeatureProvider()
                     .initSearchToolbar(this, toolbar);

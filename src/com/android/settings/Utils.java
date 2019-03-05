@@ -966,4 +966,21 @@ public final class Utils extends com.android.settingslib.Utils {
             return packageManager.getDefaultActivityIcon();
         }
     }
+
+    /**
+     * Return ThumbUI status
+     */
+    public static boolean getThumbUIStatus(Context context) {
+        try {
+            if (android.provider.Settings.System.getIntForUser(
+                context.getContentResolver(),android.provider.Settings.System.THUMB_UI,
+                UserHandle.USER_CURRENT) == 1) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (android.provider.Settings.SettingNotFoundException e) {
+                return false;
+        }
+    }
 }
