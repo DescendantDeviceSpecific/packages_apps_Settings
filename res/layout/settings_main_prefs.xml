@@ -29,7 +29,7 @@
             android:layout_weight="1">
 
         <com.android.settings.widget.SwitchBar android:id="@+id/switch_bar"
-                  android:layout_height="?android:attr/actionBarSize"
+                  android:layout_height="@*android:dimen/switch_bar_default_height_material"
                   android:layout_width="match_parent"
                   android:theme="?attr/switchBarTheme" />
 
