@@ -208,7 +208,6 @@
     <style name="Theme.SettingsBase" parent="@android:style/Theme.DeviceDefault.Settings" />
 
     <style name="Theme.Settings" parent="Theme.SettingsBase">
-        <item name="android:colorPrimaryDark">?android:attr/colorAccent</item>
         <item name="preferenceTheme">@style/PreferenceTheme</item>
         <item name="android:listPreferredItemHeight">72dip</item>
         <item name="*android:preferenceHeaderPanelStyle">@style/PreferenceHeaderPanelSinglePane</item>
