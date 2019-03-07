@@ -37,13 +37,26 @@
         android:order="1"
         android:title="@string/descendant_version"
         android:icon="@drawable/ic_descendant_icon"
-        android:summary="@string/descendant_version_default"
-        android:fragment="com.android.settings.descendant.Changelog"/>
+        android:summary="@string/descendant_version_default">
+        <intent android:action="android.intent.action.VIEW"
+                android:data="@string/descendant_website" />
+     </Preference>
+
+    <!-- Descendant support -->
+    <Preference
+        android:key="descendant_support"
+        android:order="2"
+        android:title="@string/descendant_support"
+        android:icon="@drawable/ic_descendant_support"
+        android:summary="@string/descendant_support_summary">
+        <intent android:action="android.intent.action.VIEW"
+                android:data="@string/descendant_support_website" />
+     </Preference>
 
     <!-- Android version -->
     <Preference
         android:key="firmware_version"
-        android:order="2"
+        android:order="3"
         android:title="@string/firmware_version"
         android:icon="@drawable/ic_android"
         settings:keywords="@string/keywords_android_version"
@@ -53,14 +66,14 @@
     <com.android.settings.widget.ValidatedEditTextPreference
         android:key="device_name"
         android:icon="@drawable/ic_device_phone"
-        android:order="3"
+        android:order="4"
         android:title="@string/my_device_info_device_name_preference_title"
         android:summary="@string/summary_placeholder"/>
 
     <!-- Account name -->
     <Preference
         android:key="branded_account"
-        android:order="4"
+        android:order="5"
         android:title="@string/my_device_info_account_preference_title"
         android:summary="@string/summary_placeholder"/>
 
@@ -73,7 +86,7 @@
     <!-- Phone number -->
     <Preference
         android:key="phone_number"
-        android:order="5"
+        android:order="6"
         android:icon="@drawable/ic_phone_nr"
         android:title="@string/status_number"
         android:summary="@string/summary_placeholder"
@@ -82,7 +95,7 @@
     <!-- Emergency infos -->
     <Preference
         android:key="emergency_info"
-        android:order="6"
+        android:order="7"
         android:icon="@drawable/ic_emergency_warn"
         android:title="@string/emergency_info_title"
         android:summary="@string/summary_placeholder"/>
@@ -93,7 +106,7 @@
     <!--Preference
         android:key="legal_container"
         android:icon="@drawable/ic_legal_info"
-        android:order="7"
+        android:order="8"
         android:title="@string/legal_information"
         android:fragment="com.android.settings.LegalSettings"
         settings:allowDividerAbove="true"/-->
@@ -101,7 +114,7 @@
     <!-- Regulatory labels -->
     <Preference
         android:key="regulatory_info"
-        android:order="8"
+        android:order="9"
         android:icon="@drawable/ic_legal_info"
         android:title="@string/regulatory_labels">
         <intent android:action="android.settings.SHOW_REGULATORY_INFO"/>
@@ -111,7 +124,7 @@
     <Preference
         android:key="safety_info"
         android:icon="@drawable/ic_legal_info"
-        android:order="9"
+        android:order="10"
         android:title="@string/safety_and_regulatory_info">
         <intent android:action="android.settings.SHOW_SAFETY_AND_REGULATORY_INFO"/>
     </Preference>

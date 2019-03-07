@@ -230,4 +230,10 @@
     <string name="less_notification_sounds_1m">Every minute</string>
     <string name="less_notification_sounds_2m">Every 2 minutes</string>
 
+    <!-- Descendant about phone -->
+    <string name="descendant_support">Do you need support?</string>
+    <string name="descendant_support_summary">Tap here to join our TG group!</string>
+    <string name="descendant_website">https://bit.ly/descendant_blog</string>
+    <string name="descendant_support_website">https://bit.ly/descendant_tg</string>
+
 </resources>
