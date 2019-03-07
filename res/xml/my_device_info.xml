@@ -28,8 +28,8 @@
         android:selectable="false"/>
 
     <PreferenceCategory
-        android:key="device_infos"
-        android:title="@string/device_infos">
+        android:key="descendant_infos"
+        android:title="@string/descendant_infos">
 
     <!-- Descendant versioning -->
     <Preference
@@ -52,6 +52,12 @@
         <intent android:action="android.intent.action.VIEW"
                 android:data="@string/descendant_support_website" />
      </Preference>
+
+     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="device_infos"
+        android:title="@string/device_infos">
 
     <!-- Android version -->
     <Preference
