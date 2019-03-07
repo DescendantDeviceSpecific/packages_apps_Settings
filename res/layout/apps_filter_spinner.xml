@@ -18,7 +18,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="?android:attr/actionBarSize"
+    android:layout_height="@*android:dimen/switch_bar_default_height_material"
     android:background="?android:attr/colorAccent"
     android:gravity="center_vertical"
     android:paddingEnd="@dimen/switchbar_subsettings_margin_end"
