@@ -375,6 +375,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         if (mBatteryInfo != null && mBatteryInfo.averageTimeToDischarge
                 != Estimate.AVERAGE_TIME_TO_DISCHARGE_UNKNOWN) {
             mLastFullChargePref.setTitle(R.string.battery_full_charge_last);
+            mLastFullChargePref.setIcon(R.drawable.ic_battery_full_charge);
             mLastFullChargePref.setSubtitle(
                     StringUtil.formatElapsedTime(getContext(), mBatteryInfo.averageTimeToDischarge,
                             false /* withSeconds */));
