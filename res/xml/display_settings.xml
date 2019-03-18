@@ -125,15 +125,18 @@
 
     <SwitchPreference
         android:key="camera_gesture"
+        android:icon="@drawable/ic_camera_gest"
         android:title="@string/camera_gesture_title"
         android:summary="@string/camera_gesture_desc" />
 
     <SwitchPreference
         android:key="lift_to_wake"
+        android:icon="@drawable/ic_pick_up"
         android:title="@string/lift_to_wake_title" />
 
     <SwitchPreference
         android:key="tap_to_wake"
+        android:icon="@drawable/ic_double_tap"
         android:title="@string/tap_to_wake"
         android:summary="@string/tap_to_wake_summary" />
 
