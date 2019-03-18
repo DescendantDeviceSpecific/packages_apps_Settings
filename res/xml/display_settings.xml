@@ -140,6 +140,12 @@
         android:title="@string/tap_to_wake"
         android:summary="@string/tap_to_wake_summary" />
 
+    <Preference
+        android:key="vr_display_pref"
+        android:icon="@drawable/ic_vr"
+        android:title="@string/display_vr_pref_title"
+        android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
+
     <ListPreference
         android:key="theme"
         android:title="@string/color_theme"
@@ -197,10 +203,5 @@
         android:persistent="false" />
 
     </PreferenceCategory >
-
-    <Preference
-        android:key="vr_display_pref"
-        android:title="@string/display_vr_pref_title"
-        android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
 
 </PreferenceScreen>
