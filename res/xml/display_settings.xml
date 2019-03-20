@@ -91,7 +91,7 @@
         settings:controller="com.android.settings.display.FontSizePreferenceController"
         settings:keywords="@string/keywords_display_font_size" />
 
-    <com.android.settings.display.ScreenZoomPreference
+<!--    <com.android.settings.display.ScreenZoomPreference
         android:key="display_settings_screen_zoom"
         android:icon="@drawable/ic_display_dimen"
         android:title="@string/screen_zoom_title"
@@ -101,7 +101,7 @@
     <com.android.settings.display.DensityPreference
         android:key="density"
         android:icon="@drawable/ic_min_density"
-        android:title="@string/developer_smallest_width" />
+        android:title="@string/developer_smallest_width" /> -->
 
     <SwitchPreference
         android:key="show_operator_name"
