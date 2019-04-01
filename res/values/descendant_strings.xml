@@ -236,4 +236,9 @@
     <string name="descendant_website">https://bit.ly/descendant_blog</string>
     <string name="descendant_support_website">http://bit.ly/desendant_tg_specifc</string>
     <string name="descendant_infos">Descendant information</string>
+
+    <!-- OTA -->
+    <string name="descendantupdate_settings_title">Descendant Updates</string>
+    <string name="descendantupdate_settings_summary">Check for a new version</string>
+
 </resources>

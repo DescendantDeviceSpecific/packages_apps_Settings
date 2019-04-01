@@ -23,13 +23,25 @@
 
     <com.android.settings.applications.LayoutPreference
         android:key="my_device_info_header"
-        android:order="-1"
+        android:order="-2"
         android:layout="@layout/settings_entity_header"
         android:selectable="false"/>
 
     <PreferenceCategory
         android:key="descendant_infos"
         android:title="@string/descendant_infos">
+
+    <!-- Descendant OTA -->
+    <Preference
+        android:key="descendant_updates"
+        android:order="-1"
+        android:title="@string/descendantupdate_settings_title"
+        android:icon="@drawable/ic_descendant_updates"
+        android:summary="@string/descendantupdate_settings_summary">
+        <intent android:action="android.intent.action.MAIN"
+           android:targetPackage="org.descendant.ota"
+           android:targetClass="org.descendant.ota.MainActivity" />
+    </Preference>
 
     <!-- Descendant versioning -->
     <Preference
