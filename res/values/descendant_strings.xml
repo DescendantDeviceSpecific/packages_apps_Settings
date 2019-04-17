@@ -242,4 +242,8 @@
     <string name="descendantupdate_settings_title">Descendant Updates</string>
     <string name="descendantupdate_settings_summary">Check for a new version</string>
 
+    <!-- Battery temp -->
+    <string name="battery_temp_title">Battery temperature</string>
+    <string name="battery_temp_summary">Tap to switch scale</string>
+
 </resources>
