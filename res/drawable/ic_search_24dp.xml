@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Copyright (C) 2016 The Android Open Source Project
+  Copyright (C) 2019 Descendant
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -15,16 +15,16 @@
   limitations under the License.
   -->
 
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="24dp"
-    android:height="24dp"
-    android:viewportWidth="24"
-    android:viewportHeight="24"
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="18dp"
+    android:height="18dp"
+    android:viewportWidth="52"
+    android:viewportHeight="52"
     android:tint="?android:attr/colorControlNormal">
-
     <path
-        android:fillColor="#000000"
-        android:pathData="M15.5,14h-0.79l-0.28-0.27c1.2-1.4,1.82-3.31,1.48-5.34c-0.47-2.78-2.79-5-5.59-5.34c-4.23-0.52-7.79,3.04-7.27,7.27
-c0.34,2.8,2.56,5.12,5.34,5.59c2.03,0.34,3.94-0.28,5.34-1.48L14,14.71v0.79l5.2,5.19c0.41,0.41,1.07,0.41,1.48,0l0.01-0.01
-c0.41-0.41,0.41-1.07,0-1.48L15.5,14z M9.5,14C7.01,14,5,11.99,5,9.5S7.01,5,9.5,5S14,7.01,14,9.5S11.99,14,9.5,14z" />
+        android:name="path"
+        android:pathData="M 51.704 51.273 L 36.845 35.82 C 40.635 32.019 42.983 26.779 42.983 21 C 42.983 9.42 33.563 0 21.983 0 C 10.403 0 0.983 9.42 0.983 21 C 0.983 32.58 10.403 42 21.983 42 C 27.066 42 31.731 40.183 35.367 37.168 L 50.262 52.659 C 50.458 52.864 50.72 52.966 50.983 52.966 C 51.233 52.966 51.482 52.873 51.676 52.687 C 52.074 52.304 52.086 51.671 51.704 51.273 Z M 21.983 40 C 11.506 40 2.983 31.477 2.983 21 C 2.983 10.523 11.506 2 21.983 2 C 32.46 2 40.983 10.523 40.983 21 C 40.983 31.477 32.459 40 21.983 40 Z"
+        android:fillColor="#ffffff"
+        android:strokeWidth="1"/>
 </vector>
