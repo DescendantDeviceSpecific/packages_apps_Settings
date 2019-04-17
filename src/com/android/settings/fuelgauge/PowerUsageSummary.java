@@ -245,6 +245,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         mAnomalySparseArray = new SparseArray<>();
 
         mScreenUsagePref.setIcon(R.drawable.ic_sot);
+        mBatteryTemp.setIcon(R.drawable.ic_battery_temp);
         restartBatteryInfoLoader();
         mBatteryTipPreferenceController.restoreInstanceState(icicle);
         updateBatteryTipFlag(icicle);
