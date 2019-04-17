@@ -23,7 +23,8 @@
     settings:keywords="@string/keywords_zen_mode_settings">
 
     <PreferenceCategory
-        android:title="@string/zen_category_behavior">
+        android:title="@string/zen_category_behavior"
+        settings:allowDividerBelow="false">
         <!-- sound vibration -->
         <Preference
             android:key="zen_sound_vibration_settings"
@@ -40,7 +41,9 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/zen_category_exceptions">
+        android:title="@string/zen_category_exceptions"
+        settings:allowDividerAbove="false" 
+        settings:allowDividerBelow="false">
         <Preference
             android:key="zen_mode_calls_settings"
             android:icon="@drawable/ic_local_phone_24_lib"
@@ -55,7 +58,9 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/zen_category_schedule">
+        android:title="@string/zen_category_schedule"
+        settings:allowDividerAbove="false" 
+        settings:allowDividerBelow="false">
         <!-- DND duration settings -->
         <Preference
             android:key="zen_mode_duration_settings"
@@ -73,7 +78,8 @@
     <!-- Turn on DND button -->
     <!-- Layout preference doesn't obey allowDividerAbove, so put it in a PreferenceCategory -->
     <PreferenceCategory
-        android:key="zen_mode_settings_button_category">
+        android:key="zen_mode_settings_button_category"
+        settings:allowDividerAbove="false">
         <com.android.settings.applications.LayoutPreference
             android:key="zen_mode_settings_button_container"
             android:selectable="false"
@@ -81,7 +87,8 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="zen_mode_footer_container">
+        android:key="zen_mode_footer_container"
+        settings:allowDividerAbove="false">
         <com.android.settingslib.widget.FooterPreference />
     </PreferenceCategory>
 

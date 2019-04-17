@@ -43,5 +43,5 @@
         android:key="disabled_on_data_saver"
         android:summary="@string/tether_settings_disabled_on_data_saver"
         android:selectable="false"
-        settings:allowDividerAbove="true" />
+        settings:allowDividerAbove="false" />
 </PreferenceScreen>

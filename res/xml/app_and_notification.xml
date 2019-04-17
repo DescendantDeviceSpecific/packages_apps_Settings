@@ -26,7 +26,9 @@
     <PreferenceCategory
         android:key="recent_apps_category"
         android:title="@string/recent_app_category_title"
-        android:order="-200">
+        android:order="-200"
+        settings:allowDividerAbove="false" 
+        settings:allowDividerBelow="false">
         <!-- Placeholder for a list of recent apps -->
 
         <!-- See all apps button -->

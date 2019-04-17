@@ -22,20 +22,27 @@
 
     <PreferenceCategory
         android:key="connected_access_point"
-        android:layout="@layout/preference_category_no_label"/>
-
+        android:layout="@layout/preference_category_no_label"
+        settings:allowDividerAbove="false" 
+        settings:allowDividerBelow="false"/>
+                
     <PreferenceCategory
         android:key="access_points"
-        android:layout="@layout/preference_category_no_label"/>
+        android:layout="@layout/preference_category_no_label"
+        settings:allowDividerAbove="false" 
+        settings:allowDividerBelow="false"/>
 
     <PreferenceCategory
         android:key="additional_settings"
-        android:layout="@layout/preference_category_no_label">
+        android:layout="@layout/preference_category_no_label"
+        settings:allowDividerAbove="false" 
+        settings:allowDividerBelow="false">
         <Preference
                 android:key="configure_settings"
                 android:title="@string/wifi_configure_settings_preference_title"
                 android:icon="@drawable/ic_connection_pref_wifi"
-                android:fragment="com.android.settings.wifi.ConfigureWifiSettings" />
+                android:fragment="com.android.settings.wifi.ConfigureWifiSettings" 
+                settings:allowDividerAbove="false"/>
 
         <Preference
                 android:key="saved_networks"

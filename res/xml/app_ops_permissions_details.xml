@@ -18,10 +18,14 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto">
 
     <SwitchPreference
-        android:key="app_ops_settings_switch" />
-
+        android:key="app_ops_settings_switch" 
+        settings:allowDividerAbove="false" 
+        settings:allowDividerBelow="false"/>
+                
     <Preference
         android:key="app_ops_settings_description"
-        android:selectable="false" />
+        android:selectable="false" 
+        settings:allowDividerAbove="false" 
+        settings:allowDividerBelow="false"/>
 
 </PreferenceScreen>

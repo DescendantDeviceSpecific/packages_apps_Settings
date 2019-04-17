@@ -72,7 +72,8 @@
             android:key="smart_battery_manager"
             android:icon="@drawable/ic_battery_man"
             android:title="@string/smart_battery_manager_title"
-            settings:controller="com.android.settings.fuelgauge.batterytip.BatteryManagerPreferenceController" />
+            settings:controller="com.android.settings.fuelgauge.batterytip.BatteryManagerPreferenceController" 
+            settings:allowDividerBelow="false"/>
 
         <SwitchPreference
             android:key="battery_percentage"

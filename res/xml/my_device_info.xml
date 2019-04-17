@@ -60,7 +60,8 @@
         android:order="2"
         android:title="@string/descendant_support"
         android:icon="@drawable/ic_descendant_support"
-        android:summary="@string/descendant_support_summary">
+        android:summary="@string/descendant_support_summary"
+        settings:allowDividerBelow="false">
         <intent android:action="android.intent.action.VIEW"
                 android:data="@string/descendant_support_website" />
      </Preference>
@@ -95,7 +96,8 @@
         android:icon="@drawable/ic_set_clock"
         android:title="@string/status_up_time"
         android:summary="@string/summary_placeholder"
-        android:selectable="false"/>
+        android:selectable="false"
+        settings:allowDividerBelow="false"/>
 
     <!-- Account name -->
     <Preference
@@ -108,7 +110,8 @@
 
     <PreferenceCategory
         android:key="contact_info"
-        android:title="@string/contact_info">
+        android:title="@string/contact_info"
+        settings:allowDividerBelow="false">
 
     <!-- Phone number -->
     <Preference
@@ -158,7 +161,8 @@
 
     <PreferenceCategory
         android:key="network_bt"
-        android:title="@string/network_bt">
+        android:title="@string/network_bt"
+        settings:allowDividerBelow="false">
 
     <!--IP address -->
     <Preference
@@ -212,7 +216,8 @@
 
     <PreferenceCategory
         android:key="build_info"
-        android:title="@string/build_info">
+        android:title="@string/build_info"
+        settings:allowDividerBelow="false">
 
     <!-- Build number -->
     <Preference
@@ -226,7 +231,8 @@
 
     <PreferenceCategory
         android:key="sim_hw"
-        android:title="@string/sim_hw">
+        android:title="@string/sim_hw"
+        settings:allowDividerBelow="false">
 
     <!-- SIM status -->
     <Preference

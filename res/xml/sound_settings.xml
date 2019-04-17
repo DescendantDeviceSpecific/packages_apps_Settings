@@ -95,7 +95,7 @@
         android:order="-120"
         settings:useAdminDisabledSummary="true"
         settings:keywords="@string/keywords_sounds_and_notifications_interruptions"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="false"/>
 
     <!-- Phone ringtone -->
     <com.android.settings.DefaultRingtonePreference
@@ -126,7 +126,8 @@
         android:summary="@string/summary_placeholder"
         android:persistent="false"
         android:ringtoneType="alarm"
-        android:order="-80"/>
+        android:order="-80"
+        settings:allowDividerBelow="false"/>
 
     <!-- Ambient ticker -->
     <Preference
