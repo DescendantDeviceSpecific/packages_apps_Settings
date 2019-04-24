@@ -1,5 +1,5 @@
 <!--
-  Copyright (C) 2018 The Android Open Source Project
+  Copyright (C) 2019 Descendant
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -13,12 +13,18 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-        android:width="24dp"
-        android:height="24dp"
-        android:viewportWidth="24.0"
-        android:viewportHeight="24.0">
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
     <path
+        android:pathData="M 507.48 301.267 L 507.635 301.198 L 415.698 95.563 C 407.115 76.385 388.01 64 367.01 64 L 144.99 64 C 123.99 64 104.886 76.385 96.302 95.563 L 4.365 301.198 L 4.52 301.267 C 1.717 306.947 0 313.249 0 320 L 0 405.333 C 0 428.865 19.135 448 42.667 448 L 469.334 448 C 492.865 448 512 428.865 512 405.333 L 512 320 C 512 313.249 510.283 306.947 507.48 301.267 Z M 115.781 104.271 C 120.927 92.771 132.396 85.333 144.989 85.333 L 367.01 85.333 C 379.604 85.333 391.073 92.771 396.218 104.271 L 473.794 277.784 C 472.307 277.626 470.86 277.333 469.333 277.333 L 42.667 277.333 C 41.14 277.333 39.693 277.626 38.206 277.784 L 115.781 104.271 Z M 490.667 405.333 C 490.667 417.093 481.094 426.666 469.334 426.666 L 42.667 426.666 C 30.907 426.666 21.334 417.093 21.334 405.333 L 21.334 320 C 21.334 308.24 30.907 298.667 42.667 298.667 L 469.334 298.667 C 481.094 298.667 490.667 308.24 490.667 320 L 490.667 405.333 Z"
         android:fillColor="@color/homepage_icon_tint"
-        android:pathData="M3,20h18v-4H3V20zM5,17h2v2H5V17zM3,4v4h18V4H3zM7,7H5V5h2V7zM3,14h18v-4H3V14zM5,11h2v2H5V11z"/>
+        android:strokeWidth="1"/>
+    <path
+        android:pathData="M 426.667 341.334 C 421.011 341.334 415.581 343.583 411.582 347.582 C 407.583 351.581 405.334 357.011 405.334 362.667 C 405.334 368.323 407.583 373.753 411.582 377.752 C 415.581 381.751 421.011 384 426.667 384 C 432.323 384 437.753 381.751 441.752 377.752 C 445.751 373.753 448 368.323 448 362.667 C 448 357.011 445.751 351.581 441.752 347.582 C 437.753 343.583 432.323 341.334 426.667 341.334 Z"
+        android:fillColor="@color/homepage_icon_tint"
+        android:strokeWidth="1"/>
 </vector>

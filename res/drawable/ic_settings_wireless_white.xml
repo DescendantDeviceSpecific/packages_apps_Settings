@@ -1,5 +1,5 @@
 <!--
-  Copyright (C) 2018 The Android Open Source Project
+  Copyright (C) 2019 Descendant
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -13,12 +13,22 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-        android:width="24.0dp"
-        android:height="24.0dp"
-        android:viewportWidth="24.0"
-        android:viewportHeight="24.0">
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="54"
+    android:viewportHeight="54">
     <path
+        android:pathData="M 54.615 19.123 C 47.372 11.879 37.725 7.89 27.454 7.89 C 17.183 7.89 7.537 11.878 0.293 19.123 C -0.098 19.514 -0.098 20.146 0.293 20.537 C 0.684 20.928 1.316 20.928 1.707 20.537 C 8.573 13.67 17.717 9.889 27.454 9.889 C 37.191 9.889 46.335 13.67 53.201 20.536 C 53.396 20.731 53.652 20.829 53.908 20.829 C 54.164 20.829 54.42 20.731 54.615 20.536 C 55.006 20.146 55.006 19.513 54.615 19.123 Z"
         android:fillColor="@color/homepage_icon_tint"
-        android:pathData="M23.66,8.11c0.39,-0.48 0.29,-1.19 -0.22,-1.54C21.67,5.36 17.55,3 12,3 6.44,3 2.33,5.36 0.56,6.57c-0.51,0.35 -0.61,1.06 -0.23,1.54L11.16,21.6c0.42,0.53 1.23,0.53 1.66,0L23.66,8.11z"/>
+        android:strokeWidth="1"/>
+    <path
+        android:pathData="M 6.171 25 C 5.78 25.391 5.78 26.023 6.171 26.414 C 6.366 26.609 6.622 26.707 6.878 26.707 C 7.134 26.707 7.39 26.609 7.585 26.414 C 18.54 15.458 36.366 15.458 47.322 26.414 C 47.713 26.805 48.345 26.805 48.736 26.414 C 49.127 26.023 49.127 25.391 48.736 25 C 37.002 13.266 17.907 13.264 6.171 25 Z"
+        android:fillColor="@color/homepage_icon_tint"
+        android:strokeWidth="1"/>
+    <path
+        android:pathData="M 27.454 24.508 C 21.629 24.508 16.159 26.771 12.05 30.879 C 11.659 31.27 11.659 31.902 12.05 32.293 C 12.441 32.684 13.073 32.684 13.464 32.293 C 17.195 28.563 22.163 26.508 27.454 26.508 C 32.745 26.508 37.713 28.563 41.444 32.293 C 41.639 32.488 41.895 32.586 42.151 32.586 C 42.407 32.586 42.663 32.488 42.858 32.293 C 43.249 31.902 43.249 31.27 42.858 30.879 C 38.75 26.771 33.279 24.508 27.454 24.508 Z M 27.454 33.916 C 23.842 33.916 20.903 36.855 20.903 40.468 C 20.903 44.081 23.842 47.02 27.454 47.02 C 31.067 47.02 34.006 44.081 34.006 40.468 C 34.006 36.855 31.067 33.916 27.454 33.916 Z M 27.454 45.019 C 24.944 45.019 22.903 42.977 22.903 40.467 C 22.903 37.957 24.945 35.915 27.454 35.915 C 29.963 35.915 32.006 37.957 32.006 40.467 C 32.006 42.977 29.964 45.019 27.454 45.019 Z"
+        android:fillColor="@color/homepage_icon_tint"
+        android:strokeWidth="1"/>
 </vector>
