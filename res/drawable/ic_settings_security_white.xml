@@ -1,30 +1,13 @@
-<!--
-  Copyright (C) 2019 Descendant
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-  -->
 <vector
     xmlns:android="http://schemas.android.com/apk/res/android"
+    
     android:width="24dp"
     android:height="24dp"
-    android:viewportWidth="374"
-    android:viewportHeight="374">
+    android:viewportWidth="100"
+    android:viewportHeight="100">
     <path
-        android:pathData="M 328.664 75.746 L 188.059 0.824 C 185.973 -0.289 183.473 -0.273 181.402 0.863 L 44.688 75.785 C 42.445 77.016 41.055 79.367 41.055 81.926 L 41.055 179.793 C 41.137 260.242 88.801 333.023 162.512 365.254 L 181.488 373.523 C 183.262 374.297 185.281 374.301 187.059 373.531 L 208.441 364.297 C 283.52 332.766 332.363 259.281 332.371 177.852 L 332.371 81.926 C 332.371 79.34 330.945 76.961 328.664 75.746 Z M 318.371 177.852 C 318.355 253.668 272.867 322.078 202.961 351.418 L 202.914 351.441 L 184.293 359.48 L 168.113 352.422 C 99.5 322.422 55.129 254.68 55.051 179.793 L 55.051 86.07 L 184.813 14.953 L 318.371 86.121 Z M 318.371 177.852"
-        android:fillColor="@color/homepage_icon_tint"
-        android:strokeWidth="1"/>
-    <path
-        android:pathData="M 133.168 175.254 C 130.656 172.313 126.238 171.965 123.297 174.477 C 120.355 176.984 120.008 181.406 122.52 184.344 L 159.496 227.645 C 161.965 230.535 166.289 230.93 169.234 228.531 L 255.352 158.469 C 258.352 156.031 258.805 151.621 256.363 148.621 C 253.926 145.625 249.516 145.168 246.516 147.609 L 165.703 213.352 Z M 133.168 175.254"
+        android:name="path"
+        android:pathData="M 50 50.63 Z M 91.06 19.1 C 91.1 18.774 91.021 18.445 90.837 18.173 C 90.653 17.901 90.377 17.704 90.06 17.62 Q 70.49 9 50.93 0.22 C 50.636 0.071 50.31 -0.007 49.98 -0.007 C 49.65 -0.007 49.324 0.071 49.03 0.22 Q 29.52 8.94 10 17.59 C 9.665 17.705 9.381 17.935 9.199 18.238 C 9.016 18.542 8.945 18.9 9 19.25 L 9 45.22 C 8.945 58.291 13.357 70.996 21.5 81.22 C 28.182 90.05 37.504 96.528 48.11 99.71 C 49.352 100.105 50.688 100.105 51.93 99.71 C 63.44 96.25 72.51 89.4 79.61 79.84 C 85.171 72.395 88.84 63.708 90.3 54.53 C 90.751 51.648 90.985 48.737 91 45.82 C 91.1 36.91 91 28 91.06 19.1 Z M 50 50.6 Z M 86 46.33 C 85.973 48.9 85.753 51.464 85.34 54 C 84.063 62.029 80.858 69.63 76 76.15 C 70.047 84.486 61.495 90.618 51.69 93.58 C 51.162 93.743 50.613 93.83 50.06 93.84 L 50.06 6.16 C 50.319 6.171 50.574 6.232 50.81 6.34 Q 68 14 85.16 21.61 C 85.43 21.691 85.663 21.865 85.817 22.101 C 85.97 22.337 86.035 22.62 86 22.9 L 86 46.33 Z"
         android:fillColor="@color/homepage_icon_tint"
         android:strokeWidth="1"/>
 </vector>
