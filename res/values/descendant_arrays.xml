@@ -118,6 +118,7 @@
         <item>@string/icon_selector_super_bubble</item>
         <item>@string/icon_selector_teardrop</item>
         <item>@string/icon_selector_lemon</item>
+        <item>@string/icon_selector_oreo</item>
     </string-array>
     
     <string-array name="icon_selector_values" translatable="false">
@@ -127,6 +128,7 @@
         <item>3</item>
         <item>4</item>
         <item>5</item>
+        <item>6</item>
     </string-array>
 
     <!-- UI  Selector -->
